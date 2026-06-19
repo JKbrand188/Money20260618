@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JKbrandbig888｜台美股分析系統</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">JK</span><div><strong>JKbrandbig888</strong><small>台美股研究台</small></div></div>
+    <nav>
+      <button class="nav-item active" data-view="overview"><span>◫</span>市場總覽</button>
+      <button class="nav-item" data-view="analysis"><span>⌁</span>個股分析</button>
+      <button class="nav-item" data-view="recommend"><span>✦</span>智能選股</button>
+      <button class="nav-item" data-view="watchlist"><span>☆</span>觀察清單</button>
+      <button class="nav-item" data-view="strategy"><span>◇</span>策略說明</button>
+    </nav>
+    <div class="sidebar-note"><span class="pulse"></span><div><b>示範資料模式</b><small>報價非即時，僅供功能預覽</small></div></div>
+    <div class="disclaimer">研究工具，不構成投資建議<br>投資有風險，請獨立判斷</div>
+  </aside>
+
+  <main>
+    <header>
+      <div><p class="eyebrow" id="pageEyebrow">MARKET PULSE</p><h1 id="pageTitle">市場總覽</h1></div>
+      <div class="header-actions">
+        <label class="search"><span>⌕</span><input id="searchInput" placeholder="搜尋代號或公司，例如 2330、AAPL" autocomplete="off"><div id="searchResults"></div></label>
+        <button class="date-chip" id="quoteStatus" title="點擊更新行情">行情狀態 · 連線中…</button>
+      </div>
+    </header>
+
+    <section id="overview" class="view active">
+      <button id="openRecommender" class="recommend-banner">
+        <span class="recommend-banner-icon">✦</span>
+        <span><b>智能選股</b><small>依市場、風險偏好與投資期間，產生你的股票研究名單</small></span>
+        <strong>開始選股 →</strong>
+      </button>
+      <div class="market-strip" id="marketStrip"></div>
+      <div class="hero-grid">
+        <article class="panel market-panel">
+          <div class="panel-head"><div><p class="eyebrow">MARKET TEMPERATURE</p><h2>市場溫度</h2></div><div class="segmented"><button class="active" data-market="TW">台股</button><button data-market="US">美股</button></div></div>
+          <div class="gauge-wrap"><div class="gauge"><div class="gauge-fill"></div><div class="gauge-inner"><b id="temperature">68</b><span>偏多</span></div></div><div class="gauge-labels"><span>保守</span><span>中性</span><span>熱絡</span></div></div>
+          <div class="signals" id="signals"></div>
+        </article>
+        <article class="panel focus-panel">
+          <div class="panel-head"><div><p class="eyebrow">TODAY'S FOCUS</p><h2>今日焦點</h2></div><button class="text-btn" id="goAnalysis">查看分析 →</button></div>
+          <div id="focusCard"></div>
+        </article>
+      </div>
+      <article class="panel table-panel">
+        <div class="panel-head"><div><p class="eyebrow">OPPORTUNITY RADAR</p><h2>機會雷達</h2></div><div class="filters"><button class="active" data-filter="all">全部</button><button data-filter="TW">台股</button><button data-filter="US">美股</button></div></div>
+        <div class="table-wrap"><table><thead><tr><th>公司 / 代號</th><th>市場</th><th>參考價</th><th>日變動</th><th>綜合評分</th><th>訊號</th><th></th></tr></thead><tbody id="stockRows"></tbody></table></div>
+      </article>
+    </section>
+
+    <section id="analysis" class="view">
+      <div class="stock-hero panel"><div><div class="stock-heading"><div class="ticker-logo" id="tickerLogo">台</div><div><p id="stockMeta">台灣 · 半導體</p><h2 id="stockName">台積電 <small>2330</small></h2></div></div></div><div class="stock-price"><span>參考價</span><b id="stockPrice">—</b><em id="stockChange">—</em></div><button id="watchButton" class="watch-button">＋ 加入觀察</button></div>
+      <div class="analysis-grid">
+        <article class="panel score-card"><p class="eyebrow">COMPOSITE SCORE</p><h2>綜合評分</h2><div class="score-ring"><b id="mainScore">—</b><span>/ 100</span></div><div id="scoreLabel" class="verdict">—</div><p class="muted center">依四大維度加權，非買賣建議</p></article>
+        <article class="panel dimensions"><div class="panel-head"><div><p class="eyebrow">FACTOR BREAKDOWN</p><h2>四維分析</h2></div></div><div id="dimensionBars"></div></article>
+        <article class="panel thesis"><p class="eyebrow">INVESTMENT THESIS</p><h2>分析摘要</h2><ul id="thesisList"></ul><div class="risk-box"><b>主要風險</b><p id="riskText"></p></div></article>
+      </div>
+      <div class="metric-grid" id="metricGrid"></div>
+      <article class="panel scenario-panel"><div class="panel-head"><div><p class="eyebrow">SCENARIO RANGE</p><h2>估值情境</h2></div><span class="muted">未來 12 個月示意</span></div><div id="scenarioGrid" class="scenario-grid"></div></article>
+    </section>
+
+    <section id="recommend" class="view">
+      <div class="recommend-layout">
+        <article class="panel recommender-form">
+          <p class="eyebrow">SMART SCREENER</p><h2>建立你的選股條件</h2>
+          <p class="muted form-intro">系統會依你的偏好調整四大維度權重，從目前股票池找出研究優先級較高的候選股。</p>
+          <div class="condition-groups" aria-label="選股條件群組">
+            <button class="condition-group active" data-group="circle"><b>第一組</b><span>長下引線</span></button>
+            <button class="condition-group" data-group="group2"><b>第二組</b><span>由綠轉紅</span></button>
+            <button class="condition-group" data-group="group3"><b>第三組</b><span>過三線</span></button>
+          </div>
+          <div id="groupDescription" class="group-description"><b>已選：長下引線</b><span>複選時須符合全部所選訊號</span></div>
+          <div id="circleIndicators" class="circle-indicators">
+            <div><i id="indicatorNumber">1</i><span><b id="indicatorName">長下引線</b><small id="indicatorRule">下影線 ≥ K 棒實體 2 倍</small></span></div>
+          </div>
+          <label class="field"><span>投資市場</span><select id="recMarket"><option value="all">台股＋美股</option><option value="TW">只看台股</option><option value="US">只看美股</option></select></label>
+          <label class="field"><span>風險偏好</span><select id="recRisk"><option value="balanced">穩健平衡</option><option value="conservative">保守防禦</option><option value="aggressive">積極成長</option></select></label>
+          <label class="field"><span>投資期間</span><select id="recHorizon"><option value="long">長期・1 年以上</option><option value="medium">中期・3 至 12 個月</option><option value="short">短期・3 個月內</option></select></label>
+          <button id="generateRecommendations" class="primary recommend-button">產生推薦名單</button>
+          <div class="recommend-note">推薦結果只用於縮小研究範圍，並非個人化投資顧問服務，也不保證未來報酬。</div>
+        </article>
+        <div class="recommend-results">
+          <div class="result-heading"><div><p class="eyebrow">RESEARCH SHORTLIST</p><h2>推薦研究名單</h2></div><span id="recommendProfile" class="profile-chip">穩健平衡 · 長期</span></div>
+          <div id="recommendCards" class="recommend-cards"></div>
+          <article class="panel allocation-note"><b>如何使用這份名單</b><p>先點入個股閱讀完整分析，再核對最新財報、重大消息與估值。建議分散持股，避免因單一高分股票承擔過度集中風險。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="watchlist" class="view"><article class="panel empty-state"><div class="big-star">☆</div><h2>你的觀察清單</h2><p>把感興趣的股票集中在這裡，方便比較評分與訊號。</p><div id="watchCards" class="watch-cards"></div><button id="browseButton" class="primary">瀏覽機會雷達</button></article></section>
+
+    <section id="strategy" class="view"><article class="panel strategy-copy"><p class="eyebrow">METHODOLOGY</p><h2>一套透明、可解釋的評分方法</h2><p>系統將不同性質的指標標準化為 0–100 分，再依四個維度加權。分數是研究線索，不是自動交易指令。</p><div class="method-grid"><div><b>35%</b><h3>基本面</h3><p>營收與獲利成長、資本報酬率、現金流品質。</p></div><div><b>25%</b><h3>趨勢</h3><p>價格動能、均線結構、相對市場強弱。</p></div><div><b>25%</b><h3>估值</h3><p>本益比、成長調整估值與歷史區間。</p></div><div><b>15%</b><h3>風險</h3><p>波動度、財務槓桿、回撤與集中風險。</p></div></div><div class="notice"><b>使用原則</b><p>先用分數縮小研究範圍，再閱讀財報、法說與產業資訊。任何單一指標都可能失效；配置、停損與資金管理仍由投資人自行負責。</p></div></article></section>
+  </main>
+  <div id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
