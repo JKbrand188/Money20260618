@@ -1,3 +1,5 @@
+import csv
+import io
 import json
 import math
 import pathlib
@@ -68,10 +70,25 @@ def fetch_day(day):
 
 
 def fetch_tech_universe():
-    url = "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
-    request = urllib.request.Request(url, headers=HEADERS)
-    with urllib.request.urlopen(request, timeout=35) as response:
-        rows = json.load(response)
+    rows = None
+    json_url = "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
+    try:
+        request = urllib.request.Request(json_url, headers=HEADERS)
+        with urllib.request.urlopen(request, timeout=35) as response:
+            raw = response.read()
+        rows = json.loads(raw.decode("utf-8-sig"))
+    except Exception as exc:
+        print(f"TWSE OpenAPI unavailable, switching to MOPS CSV: {exc}")
+    if not isinstance(rows, list):
+        csv_url = "https://mopsfin.twse.com.tw/opendata/t187ap03_L.csv"
+        request = urllib.request.Request(csv_url, headers=HEADERS)
+        with urllib.request.urlopen(request, timeout=35) as response:
+            raw = response.read()
+        try:
+            text = raw.decode("utf-8-sig")
+        except UnicodeDecodeError:
+            text = raw.decode("cp950", errors="replace")
+        rows = list(csv.DictReader(io.StringIO(text)))
     universe = {}
     for row in rows:
         symbol = str(row.get("公司代號") or "").strip()
