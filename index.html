@@ -78,7 +78,7 @@
           <div id="circleIndicators" class="circle-indicators">
             <div><i id="indicatorNumber">1</i><span><b id="indicatorName">長下引線</b><small id="indicatorRule">下影線 ≥ K 棒實體 2 倍</small></span></div>
           </div>
-          <label class="field"><span>投資市場</span><select id="recMarket"><option value="all">台股＋美股</option><option value="TW">只看台股</option><option value="US">只看美股</option></select></label>
+          <label class="field"><span>投資市場</span><select id="recMarket"><option value="TW" selected>台股科技股</option><option value="all">台股科技股＋美股</option><option value="US">只看美股</option></select></label>
           <label class="field"><span>風險偏好</span><select id="recRisk"><option value="balanced">穩健平衡</option><option value="conservative">保守防禦</option><option value="aggressive">積極成長</option></select></label>
           <label class="field"><span>投資期間</span><select id="recHorizon"><option value="long">長期・1 年以上</option><option value="medium">中期・3 至 12 個月</option><option value="short">短期・3 個月內</option></select></label>
           <button id="generateRecommendations" class="primary recommend-button">產生推薦名單</button>
@@ -97,6 +97,6 @@
     <section id="strategy" class="view"><article class="panel strategy-copy"><p class="eyebrow">METHODOLOGY</p><h2>一套透明、可解釋的評分方法</h2><p>系統將不同性質的指標標準化為 0–100 分，再依四個維度加權。分數是研究線索，不是自動交易指令。</p><div class="method-grid"><div><b>35%</b><h3>基本面</h3><p>營收與獲利成長、資本報酬率、現金流品質。</p></div><div><b>25%</b><h3>趨勢</h3><p>價格動能、均線結構、相對市場強弱。</p></div><div><b>25%</b><h3>估值</h3><p>本益比、成長調整估值與歷史區間。</p></div><div><b>15%</b><h3>風險</h3><p>波動度、財務槓桿、回撤與集中風險。</p></div></div><div class="notice"><b>使用原則</b><p>先用分數縮小研究範圍，再閱讀財報、法說與產業資訊。任何單一指標都可能失效；配置、停損與資金管理仍由投資人自行負責。</p></div></article></section>
   </main>
   <div id="toast"></div>
-  <script src="app.js?v=20260620-3"></script>
+  <script src="app.js?v=20260620-4"></script>
 </body>
 </html>

@@ -29,7 +29,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/quotes.json
           git diff --cached --quiet || git commit -m "Update delayed stock quotes"
-          git push
+          git pull --rebase origin main
+          git push origin main
 
   scan-twse-technology:
     if: github.event_name == 'workflow_dispatch' || github.event.schedule == '30 6 * * * 1-5'
@@ -49,4 +50,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/twse_history.json data/tw_opportunities.json
           git diff --cached --quiet || git commit -m "Update Taiwan technology opportunity radar"
-          git push
+          git pull --rebase origin main
+          git push origin main
