@@ -3,27 +3,41 @@ name: Update delayed stock quotes
 on:
   schedule:
     - cron: "*/5 * * * 1-5"
+    - cron: "30 6 * * * 1-5"
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: market-data-update
+  cancel-in-progress: false
+
 jobs:
   update-quotes:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 25
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
       - name: Fetch latest quotes
         run: python scripts/update_quotes.py
-      - name: Commit updated quotes
+
+      - name: Scan TWSE technology stocks
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '30 6 * * * 1-5'
+        run: python scripts/scan_twse.py
+
+      - name: Commit market data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/quotes.json
-          git diff --cached --quiet || git commit -m "Update delayed stock quotes"
+          git add data/twse_history.json data/tw_opportunities.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "Update market data and Taiwan technology radar"
           git pull --rebase origin main
           git push origin main
