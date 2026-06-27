@@ -17,6 +17,19 @@ TECH_INDUSTRIES = {
     "27": "通信網路業", "28": "電子零組件業", "29": "電子通路業",
     "30": "資訊服務業", "31": "其他電子業", "36": "數位雲端業",
 }
+FALLBACK_TECH_UNIVERSE = {
+    "2301": "電腦及週邊設備業", "2303": "半導體業", "2308": "電子零組件業",
+    "2317": "其他電子業", "2324": "電腦及週邊設備業", "2330": "半導體業",
+    "2344": "半導體業", "2352": "電腦及週邊設備業", "2353": "電腦及週邊設備業",
+    "2356": "電腦及週邊設備業", "2379": "半導體業", "2382": "電腦及週邊設備業",
+    "2383": "電子零組件業", "2395": "電腦及週邊設備業", "2408": "半導體業",
+    "2409": "光電業", "2412": "通信網路業", "2449": "光電業",
+    "2454": "半導體業", "2474": "電子零組件業", "2498": "通信網路業",
+    "3008": "光電業", "3017": "電子零組件業", "3034": "半導體業",
+    "3035": "電子零組件業", "3045": "通信網路業", "3231": "電腦及週邊設備業",
+    "3443": "半導體業", "3653": "半導體業", "3711": "半導體業",
+    "4938": "光電業", "6669": "半導體業", "6770": "半導體業",
+}
 
 
 def number(value):
@@ -91,12 +104,27 @@ def fetch_tech_universe():
         rows = list(csv.DictReader(io.StringIO(text)))
     universe = {}
     for row in rows:
-        symbol = str(row.get("公司代號") or "").strip()
-        industry_code = str(row.get("產業別") or "").strip().zfill(2)
-        if symbol.isdigit() and len(symbol) == 4 and industry_code in TECH_INDUSTRIES:
-            universe[symbol] = TECH_INDUSTRIES[industry_code]
+        symbol = str(row.get("公司代號") or row.get("證券代號") or row.get("stock_id") or "").strip()
+        if not symbol:
+            for key, value in row.items():
+                if any(token in str(key).lower() for token in ("公司代號", "證券代號", "代號", "stock")):
+                    symbol = str(value or "").strip()
+                    break
+        industry_raw = str(row.get("產業別") or row.get("產業名稱") or row.get("industry_code") or row.get("industry") or "").strip()
+        if not industry_raw:
+            for key, value in row.items():
+                if any(token in str(key).lower() for token in ("產業", "industry")):
+                    industry_raw = str(value or "").strip()
+                    break
+        industry_code = industry_raw[:2].zfill(2) if industry_raw[:2].strip().isdigit() else ""
+        industry_name = TECH_INDUSTRIES.get(industry_code)
+        if not industry_name:
+            industry_name = next((name for name in TECH_INDUSTRIES.values() if name in industry_raw), None)
+        if symbol.isdigit() and len(symbol) == 4 and industry_name:
+            universe[symbol] = industry_name
     if not universe:
-        raise RuntimeError("TWSE technology industry list is empty")
+        print("TWSE technology industry list is empty; using curated fallback technology universe")
+        universe = FALLBACK_TECH_UNIVERSE.copy()
     print(f"Loaded {len(universe)} TWSE technology stocks")
     return universe
 
@@ -124,6 +152,7 @@ def score_stock(symbol, rows, industry_name):
     body = max(abs(latest["close"] - latest["open"]), latest["close"] * 0.001)
     lower_shadow = min(latest["open"], latest["close"]) - latest["low"]
     long_shadow = lower_shadow >= body * 2
+    volume_1000 = (latest.get("volume") or 0) >= 1_000_000
     macd_line = [a - b for a, b in zip(ema(closes, 12), ema(closes, 26))]
     signal_line = ema(macd_line, 9)
     histogram = [a - b for a, b in zip(macd_line, signal_line)]
@@ -148,11 +177,12 @@ def score_stock(symbol, rows, industry_name):
     fundamental_proxy = round(value_score * 0.7 + liquidity_score * 0.3)
     score = round(fundamental_proxy * 0.30 + trend_score * 0.40 + value_score * 0.15 + risk_score * 0.15)
     change = round((latest["close"] / previous["close"] - 1) * 100, 2)
-    passed = sum((long_shadow, macd_turn, above_mas))
+    passed = sum((long_shadow, macd_turn, above_mas, volume_1000))
     reasons = []
     if long_shadow: reasons.append("出現長下引線")
     if macd_turn: reasons.append("MACD 柱狀體由綠轉紅")
     if above_mas: reasons.append("收盤價站上 MA5、MA10、MA20")
+    if volume_1000: reasons.append("每日交易量 1000 張以上")
     if not reasons: reasons.append("依估值與風險分數進入排行")
     return {
         "symbol": symbol, "name": latest["name"], "market": "TW", "sector": industry_name,
@@ -163,7 +193,8 @@ def score_stock(symbol, rows, industry_name):
         "margin": "—", "vol": f"{volatility * 100:.1f}%",
         "thesis": reasons + [f"技術條件通過 {passed}/3；資料日期 {latest['date']}。"],
         "risk": f"近 20 日年化波動約 {volatility * 100:.1f}%，近 70 日最大回撤約 {max_drawdown * 100:.1f}%。",
-        "technical": {"shadow": long_shadow, "macd": macd_turn, "mas": above_mas},
+        "technical": {"shadow": long_shadow, "macd": macd_turn, "mas": above_mas, "volume": volume_1000},
+        "volumeShares": latest.get("volume"), "volumeLots": round((latest.get("volume") or 0) / 1000),
         "dataDate": latest["date"], "peRaw": pe, "pbRaw": pb, "yieldRaw": dividend_yield,
     }
 
