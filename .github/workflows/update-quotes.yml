@@ -1,6 +1,8 @@
 name: Update market data
 
 on:
+  schedule:
+    - cron: "0 10 * * 1-5"
   workflow_dispatch:
 
 permissions:
@@ -10,7 +12,6 @@ jobs:
   update-market-data:
     runs-on: ubuntu-latest
     timeout-minutes: 25
-
     steps:
       - name: Download repository
         uses: actions/checkout@v4
