@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T11:59:05.145405+00:00",
+  "updatedAt": "2026-06-27T12:06:45.173815+00:00",
   "source": "GitHub Actions delayed market data with provider fallback",
   "quotes": [
     {
@@ -51,5 +51,60 @@
       "provider": "Yahoo"
     }
   ],
-  "errors": []
+  "indices": {
+    "TW": [
+      [
+        "加權指數",
+        "44,571.76",
+        -3.64,
+        "Yahoo"
+      ],
+      [
+        "櫃買指數",
+        "269.45",
+        0.65,
+        "Yahoo"
+      ],
+      [
+        "美元／台幣",
+        "31.84",
+        0.03,
+        "Yahoo"
+      ]
+    ],
+    "US": [
+      [
+        "S&P 500",
+        "7,354.02",
+        -0.05,
+        "Yahoo"
+      ],
+      [
+        "NASDAQ",
+        "25,297.62",
+        -0.24,
+        "Yahoo"
+      ],
+      [
+        "Dow Jones",
+        "51,876.11",
+        -0.09,
+        "Yahoo"
+      ],
+      [
+        "VIX",
+        "18.41",
+        -2.54,
+        "Yahoo"
+      ]
+    ]
+  },
+  "errors": [],
+  "indexErrors": [
+    {
+      "symbol": "TXF=F",
+      "label": "台指近月",
+      "message": "HTTP Error 404: Not Found"
+    }
+  ]
 }
