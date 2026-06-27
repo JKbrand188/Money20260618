@@ -11,6 +11,20 @@ SYMBOLS = {
     "2330": "2330.TW", "2454": "2454.TW", "2881": "2881.TW",
     "AAPL": "AAPL", "NVDA": "NVDA", "MSFT": "MSFT",
 }
+MARKET_INDICES = {
+    "TW": [
+        ("加權指數", "^TWII"),
+        ("櫃買指數", "^TWOII"),
+        ("台指近月", "TXF=F"),
+        ("美元／台幣", "TWD=X"),
+    ],
+    "US": [
+        ("S&P 500", "^GSPC"),
+        ("NASDAQ", "^IXIC"),
+        ("Dow Jones", "^DJI"),
+        ("VIX", "^VIX"),
+    ],
+}
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; JKbrandbig888/1.0)"}
 
 
@@ -67,6 +81,35 @@ def make_quote(symbol, price, previous, currency, market_state, source):
             "marketState": market_state, "provider": source}
 
 
+def make_index(label, price, previous, source):
+    change = round((price - previous) / previous * 100, 2) if previous else 0
+    if price >= 1000:
+        display = f"{price:,.2f}"
+    elif price >= 100:
+        display = f"{price:,.2f}".rstrip("0").rstrip(".")
+    else:
+        display = f"{price:.2f}"
+    return [label, display, change, source]
+
+
+def yahoo_index(label, provider_symbol):
+    encoded = urllib.parse.quote(provider_symbol)
+    last_error = None
+    for host in ("query1.finance.yahoo.com", "query2.finance.yahoo.com"):
+        for attempt in range(2):
+            try:
+                url = f"https://{host}/v8/finance/chart/{encoded}?interval=1m&range=1d"
+                result = json.loads(get_text(url))["chart"]["result"][0]
+                meta = result["meta"]
+                price = float(meta["regularMarketPrice"])
+                previous = float(meta.get("chartPreviousClose") or meta.get("previousClose") or price)
+                return make_index(label, price, previous, "Yahoo")
+            except Exception as exc:
+                last_error = exc
+                time.sleep(1 + attempt)
+    raise last_error or RuntimeError("Yahoo index unavailable")
+
+
 def fetch_quote(symbol, provider_symbol):
     try:
         return yahoo_quote(symbol, provider_symbol)
@@ -84,6 +127,15 @@ for symbol, provider_symbol in SYMBOLS.items():
     except Exception as exc:
         errors.append({"symbol": symbol, "message": str(exc)[:240]})
 
+indices, index_errors = {}, []
+for market, items in MARKET_INDICES.items():
+    indices[market] = []
+    for label, provider_symbol in items:
+        try:
+            indices[market].append(yahoo_index(label, provider_symbol))
+        except Exception as exc:
+            index_errors.append({"symbol": provider_symbol, "label": label, "message": str(exc)[:240]})
+
 if not quotes:
     raise RuntimeError("All quote providers failed: " + json.dumps(errors, ensure_ascii=False))
 
@@ -93,5 +145,7 @@ output.write_text(json.dumps({
     "updatedAt": datetime.now(timezone.utc).isoformat(),
     "source": "GitHub Actions delayed market data with provider fallback",
     "quotes": quotes,
+    "indices": indices,
     "errors": errors,
+    "indexErrors": index_errors,
 }, ensure_ascii=False, indent=2), encoding="utf-8")
