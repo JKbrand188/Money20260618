@@ -241,7 +241,10 @@ history = json.loads(HISTORY_FILE.read_text(encoding="utf-8")) if HISTORY_FILE.e
 history = {symbol: rows for symbol, rows in history.items() if symbol in tech_universe}
 today = datetime.now(timezone.utc).date()
 existing_dates = {row["date"] for rows in history.values() for row in rows}
-lookback = 90 if len(existing_dates) < 35 else 7
+symbols_with_enough_history = sum(1 for symbol in tech_universe if len(history.get(symbol, [])) >= 35)
+lookback = 90 if len(existing_dates) < 35 or symbols_with_enough_history < 45 else 7
+if lookback == 90:
+    print(f"Backfilling 90 days because only {symbols_with_enough_history} technology stocks have enough history")
 for offset in reversed(range(lookback)):
     day = today - timedelta(days=offset)
     if day.weekday() >= 5 or day.isoformat() in existing_dates:
