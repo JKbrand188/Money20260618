@@ -141,22 +141,43 @@ def clamp(value, low=0, high=100):
     return max(low, min(high, value))
 
 
+def window_signals(rows, closes, histogram, days):
+    sample = rows[-days:]
+    latest = rows[-1]
+    open_price = sample[0]["open"]
+    close_price = latest["close"]
+    high_price = max(row["high"] for row in sample)
+    low_price = min(row["low"] for row in sample)
+    avg_volume = statistics.mean(row.get("volume") or 0 for row in sample)
+    ma5, ma10, ma20 = (statistics.mean(closes[-period:]) for period in (5, 10, 20))
+    above_mas = close_price > ma5 and close_price > ma10 and close_price > ma20
+    body = max(abs(close_price - open_price), close_price * 0.001)
+    lower_shadow = min(open_price, close_price) - low_price
+    long_shadow = lower_shadow >= body * 2
+    start_index = max(1, len(histogram) - days)
+    macd_turn = any(histogram[i - 1] <= 0 < histogram[i] for i in range(start_index, len(histogram)))
+    volume_1000 = avg_volume >= 1_000_000
+    return {"shadow": long_shadow, "macd": macd_turn, "mas": above_mas, "volume": volume_1000}
+
+
 def score_stock(symbol, rows, industry_name):
     rows = sorted(rows, key=lambda row: row["date"])[-70:]
     if len(rows) < 35:
         return None
     closes = [row["close"] for row in rows]
     latest, previous = rows[-1], rows[-2]
-    ma5, ma10, ma20 = (statistics.mean(closes[-period:]) for period in (5, 10, 20))
-    above_mas = latest["close"] > ma5 and latest["close"] > ma10 and latest["close"] > ma20
-    body = max(abs(latest["close"] - latest["open"]), latest["close"] * 0.001)
-    lower_shadow = min(latest["open"], latest["close"]) - latest["low"]
-    long_shadow = lower_shadow >= body * 2
-    volume_1000 = (latest.get("volume") or 0) >= 1_000_000
     macd_line = [a - b for a, b in zip(ema(closes, 12), ema(closes, 26))]
     signal_line = ema(macd_line, 9)
     histogram = [a - b for a, b in zip(macd_line, signal_line)]
-    macd_turn = histogram[-2] <= 0 < histogram[-1]
+    technical_windows = {
+        "d1": window_signals(rows, closes, histogram, 1),
+        "d3": window_signals(rows, closes, histogram, 3),
+        "d5": window_signals(rows, closes, histogram, 5),
+    }
+    long_shadow = technical_windows["d1"]["shadow"]
+    macd_turn = technical_windows["d1"]["macd"]
+    above_mas = technical_windows["d1"]["mas"]
+    volume_1000 = technical_windows["d1"]["volume"]
     returns = [(closes[i] / closes[i - 1] - 1) for i in range(1, len(closes)) if closes[i - 1]]
     volatility = statistics.pstdev(returns[-20:]) * math.sqrt(252) if len(returns) >= 20 else 0.5
     peak, max_drawdown = closes[0], 0
@@ -191,9 +212,9 @@ def score_stock(symbol, rows, industry_name):
         "logo": latest["name"][:1], "dims": [fundamental_proxy, round(trend_score), value_score, round(risk_score)],
         "pe": f"{pe:.1f}x" if pe else "—", "growth": "—", "roe": "—",
         "margin": "—", "vol": f"{volatility * 100:.1f}%",
-        "thesis": reasons + [f"技術條件通過 {passed}/3；資料日期 {latest['date']}。"],
+        "thesis": reasons + [f"技術條件通過 {passed}/4；資料日期 {latest['date']}。"],
         "risk": f"近 20 日年化波動約 {volatility * 100:.1f}%，近 70 日最大回撤約 {max_drawdown * 100:.1f}%。",
-        "technical": {"shadow": long_shadow, "macd": macd_turn, "mas": above_mas, "volume": volume_1000},
+        "technical": technical_windows["d1"], "technicalWindows": technical_windows,
         "volumeShares": latest.get("volume"), "volumeLots": round((latest.get("volume") or 0) / 1000),
         "dataDate": latest["date"], "peRaw": pe, "pbRaw": pb, "yieldRaw": dividend_yield,
     }
