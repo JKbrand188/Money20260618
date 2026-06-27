@@ -252,6 +252,6 @@ HISTORY_FILE.write_text(json.dumps(history, ensure_ascii=False), encoding="utf-8
 OUTPUT_FILE.write_text(json.dumps({
     "updatedAt": datetime.now(timezone.utc).isoformat(), "market": "TWSE_TECH", "count": len(opportunities),
     "universeCount": len(tech_universe), "industries": list(TECH_INDUSTRIES.values()),
-    "method": "TWSE technology stocks: end-of-day technical, valuation proxy and risk ranking", "stocks": opportunities[:30],
+    "method": "TWSE technology stocks: end-of-day technical, valuation proxy and risk ranking", "stocks": opportunities[:45],
 }, ensure_ascii=False, indent=2), encoding="utf-8")
-print(f"Generated {min(30, len(opportunities))} opportunities from {len(opportunities)} eligible stocks")
+print(f"Generated {min(45, len(opportunities))} opportunities from {len(opportunities)} eligible stocks")
