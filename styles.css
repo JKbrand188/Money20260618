@@ -12,3 +12,4 @@
 .recommend-banner{background:linear-gradient(110deg,#7a2028,#b8323d)}.recommend-banner:hover{background:linear-gradient(110deg,#8a252e,#c83b46)}.recommend-banner-icon{background:rgba(255,255,255,.16)}.recommend-banner small{color:#f3cdd0}
 .sidebar-note{background:#f7dfe2;border-color:#e6aeb4;color:#7b252d}.sidebar-note small{color:#9b5960}.sidebar-note .pulse{background:#cc4852;box-shadow:0 0 0 5px rgba(204,72,82,.14)}
 .radar-status{display:block;color:var(--muted);font-size:9px;margin-top:6px}.radar-status.ready{color:var(--green)}
+.condition-groups{grid-template-columns:repeat(2,1fr)}
