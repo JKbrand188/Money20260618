@@ -247,7 +247,9 @@ if lookback == 90:
     print(f"Backfilling 90 days because only {symbols_with_enough_history} technology stocks have enough history")
 for offset in reversed(range(lookback)):
     day = today - timedelta(days=offset)
-    if day.weekday() >= 5 or day.isoformat() in existing_dates:
+    if day.weekday() >= 5:
+        continue
+    if lookback != 90 and day.isoformat() in existing_dates:
         continue
     try:
         records = fetch_day(day)
