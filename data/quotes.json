@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-09T17:29:10.809181+00:00",
+  "updatedAt": "2026-07-10T17:07:00.362009+00:00",
   "source": "GitHub Actions delayed market data with provider fallback",
   "quotes": [
     {
@@ -28,24 +28,24 @@
     },
     {
       "symbol": "AAPL",
-      "price": 314.7,
-      "change": 0.42,
+      "price": 314.59,
+      "change": -0.52,
       "currency": "USD",
       "marketState": null,
       "provider": "Yahoo"
     },
     {
       "symbol": "NVDA",
-      "price": 202.975,
-      "change": -0.56,
+      "price": 209.84,
+      "change": 3.48,
       "currency": "USD",
       "marketState": null,
       "provider": "Yahoo"
     },
     {
       "symbol": "MSFT",
-      "price": 380.732,
-      "change": -0.68,
+      "price": 385.55,
+      "change": 0.31,
       "currency": "USD",
       "marketState": null,
       "provider": "Yahoo"
@@ -67,34 +67,34 @@
       ],
       [
         "美元／台幣",
-        "32.15",
-        0.13,
+        "32.10",
+        -0.0,
         "Yahoo"
       ]
     ],
     "US": [
       [
         "S&P 500",
-        "7,544.67",
-        0.83,
+        "7,564.16",
+        0.27,
         "Yahoo"
       ],
       [
         "NASDAQ",
-        "26,183.58",
-        1.21,
+        "26,261.78",
+        0.21,
         "Yahoo"
       ],
       [
         "Dow Jones",
-        "52,530.79",
-        0.35,
+        "52,618.94",
+        0.25,
         "Yahoo"
       ],
       [
         "VIX",
-        "15.96",
-        -5.56,
+        "15.21",
+        -3.98,
         "Yahoo"
       ]
     ]
