@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-31T11:51:37.595325+00:00",
+  "updatedAt": "2026-08-03T12:48:28.734985+00:00",
   "market": "TWSE_TECH",
   "count": 70,
   "universeCount": 469,
@@ -17,34 +17,96 @@
   "method": "TWSE technology stocks: end-of-day technical, valuation proxy and risk ranking",
   "stocks": [
     {
-      "symbol": "3017",
-      "name": "奇鋐",
+      "symbol": "2354",
+      "name": "鴻準",
       "market": "TW",
-      "sector": "電腦及週邊設備業",
-      "price": 2320.0,
-      "change": 9.95,
-      "score": 48,
+      "sector": "其他電子業",
+      "price": 56.4,
+      "change": -0.18,
+      "score": 59,
       "signal": "中性",
-      "logo": "奇",
+      "logo": "鴻",
+      "dims": [
+        47,
+        93,
+        26,
+        27
+      ],
+      "pe": "26.7x",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "40.9%",
+      "thesis": [
+        "出現長下引線",
+        "MACD 柱狀體由綠轉紅",
+        "收盤價站上 MA5、MA10、MA20",
+        "每日交易量 1000 張以上",
+        "技術條件通過 4/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 40.9%，近 70 日最大回撤約 -37.6%。",
+      "technical": {
+        "shadow": true,
+        "macd": true,
+        "mas": true,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": true,
+          "macd": true,
+          "mas": true,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": true,
+          "mas": true,
+          "volume": true
+        },
+        "d5": {
+          "shadow": true,
+          "macd": true,
+          "mas": true,
+          "volume": true
+        }
+      },
+      "volumeShares": 3351211.0,
+      "volumeLots": 3351,
+      "dataDate": "2026-08-03",
+      "peRaw": 26.73,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "sector": "半導體業",
+      "price": 3910.0,
+      "change": 9.99,
+      "score": 49,
+      "signal": "中性",
+      "logo": "聯",
       "dims": [
         38,
-        87,
+        90,
         12,
         0
       ],
-      "pe": "38.1x",
+      "pe": "64.6x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "79.5%",
+      "vol": "86.0%",
       "thesis": [
         "出現長下引線",
         "MACD 柱狀體由綠轉紅",
         "收盤價站上 MA5、MA10、MA20",
         "每日交易量 1000 張以上",
-        "技術條件通過 4/4；資料日期 2026-07-31。"
+        "技術條件通過 4/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 79.5%，近 70 日最大回撤約 -98.9%。",
+      "risk": "近 20 日年化波動約 86.0%，近 70 日最大回撤約 -93.8%。",
       "technical": {
         "shadow": true,
         "macd": true,
@@ -59,68 +121,7 @@
           "volume": true
         },
         "d3": {
-          "shadow": true,
-          "macd": true,
-          "mas": true,
-          "volume": true
-        },
-        "d5": {
-          "shadow": true,
-          "macd": true,
-          "mas": true,
-          "volume": true
-        }
-      },
-      "volumeShares": 2498885.0,
-      "volumeLots": 2499,
-      "dataDate": "2026-07-31",
-      "peRaw": 38.12,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "4938",
-      "name": "和碩",
-      "market": "TW",
-      "sector": "電腦及週邊設備業",
-      "price": 84.4,
-      "change": 4.84,
-      "score": 58,
-      "signal": "中性",
-      "logo": "和",
-      "dims": [
-        56,
-        73,
-        38,
-        39
-      ],
-      "pe": "19.4x",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "36.4%",
-      "thesis": [
-        "MACD 柱狀體由綠轉紅",
-        "收盤價站上 MA5、MA10、MA20",
-        "每日交易量 1000 張以上",
-        "技術條件通過 3/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 36.4%，近 70 日最大回撤約 -28.6%。",
-      "technical": {
-        "shadow": false,
-        "macd": true,
-        "mas": true,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
           "shadow": false,
-          "macd": true,
-          "mas": true,
-          "volume": true
-        },
-        "d3": {
-          "shadow": true,
           "macd": true,
           "mas": true,
           "volume": true
@@ -132,71 +133,10 @@
           "volume": true
         }
       },
-      "volumeShares": 14187557.0,
-      "volumeLots": 14188,
-      "dataDate": "2026-07-31",
-      "peRaw": 19.4,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "2451",
-      "name": "創見",
-      "market": "TW",
-      "sector": "半導體業",
-      "price": 293.0,
-      "change": 8.72,
-      "score": 58,
-      "signal": "中性",
-      "logo": "創",
-      "dims": [
-        73,
-        68,
-        62,
-        0
-      ],
-      "pe": "5.1x",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "72.6%",
-      "thesis": [
-        "出現長下引線",
-        "收盤價站上 MA5、MA10、MA20",
-        "每日交易量 1000 張以上",
-        "技術條件通過 3/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 72.6%，近 70 日最大回撤約 -77.5%。",
-      "technical": {
-        "shadow": true,
-        "macd": false,
-        "mas": true,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
-          "shadow": true,
-          "macd": false,
-          "mas": true,
-          "volume": true
-        },
-        "d3": {
-          "shadow": false,
-          "macd": false,
-          "mas": true,
-          "volume": true
-        },
-        "d5": {
-          "shadow": false,
-          "macd": false,
-          "mas": true,
-          "volume": true
-        }
-      },
-      "volumeShares": 16586620.0,
-      "volumeLots": 16587,
-      "dataDate": "2026-07-31",
-      "peRaw": 5.1,
+      "volumeShares": 7516212.0,
+      "volumeLots": 7516,
+      "dataDate": "2026-08-03",
+      "peRaw": 64.57,
       "pbRaw": null,
       "yieldRaw": null
     },
@@ -206,28 +146,28 @@
       "market": "TW",
       "sector": "電子零組件業",
       "price": 106.0,
-      "change": 1.44,
+      "change": 0.0,
       "score": 57,
       "signal": "中性",
       "logo": "群",
       "dims": [
         64,
-        63,
+        62,
         51,
-        36
+        37
       ],
       "pe": "12.0x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "23.5%",
+      "vol": "22.9%",
       "thesis": [
         "出現長下引線",
         "收盤價站上 MA5、MA10、MA20",
         "每日交易量 1000 張以上",
-        "技術條件通過 3/4；資料日期 2026-07-31。"
+        "技術條件通過 3/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 23.5%，近 70 日最大回撤約 -49.1%。",
+      "risk": "近 20 日年化波動約 22.9%，近 70 日最大回撤約 -49.1%。",
       "technical": {
         "shadow": true,
         "macd": false,
@@ -254,224 +194,346 @@
           "volume": true
         }
       },
-      "volumeShares": 7150763.0,
-      "volumeLots": 7151,
-      "dataDate": "2026-07-31",
+      "volumeShares": 3058586.0,
+      "volumeLots": 3059,
+      "dataDate": "2026-08-03",
       "peRaw": 11.96,
       "pbRaw": null,
       "yieldRaw": null
     },
     {
-      "symbol": "3231",
-      "name": "緯創",
+      "symbol": "2362",
+      "name": "藍天",
       "market": "TW",
       "sector": "電腦及週邊設備業",
-      "price": 176.0,
-      "change": 10.0,
-      "score": 51,
+      "price": 44.75,
+      "change": 6.67,
+      "score": 53,
       "signal": "中性",
-      "logo": "緯",
+      "logo": "藍",
       "dims": [
-        59,
-        67,
-        41,
-        0
+        53,
+        75,
+        37,
+        11
       ],
-      "pe": "17.6x",
+      "pe": "20.0x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "68.9%",
+      "vol": "49.6%",
       "thesis": [
-        "出現長下引線",
+        "MACD 柱狀體由綠轉紅",
         "收盤價站上 MA5、MA10、MA20",
         "每日交易量 1000 張以上",
-        "技術條件通過 3/4；資料日期 2026-07-31。"
+        "技術條件通過 3/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 68.9%，近 70 日最大回撤約 -88.3%。",
+      "risk": "近 20 日年化波動約 49.6%，近 70 日最大回撤約 -46.1%。",
       "technical": {
-        "shadow": true,
-        "macd": false,
+        "shadow": false,
+        "macd": true,
         "mas": true,
         "volume": true
       },
       "technicalWindows": {
         "d1": {
-          "shadow": true,
-          "macd": false,
+          "shadow": false,
+          "macd": true,
           "mas": true,
           "volume": true
         },
         "d3": {
-          "shadow": true,
-          "macd": false,
+          "shadow": false,
+          "macd": true,
           "mas": true,
           "volume": true
         },
         "d5": {
           "shadow": true,
-          "macd": false,
+          "macd": true,
           "mas": true,
           "volume": true
         }
       },
-      "volumeShares": 138686721.0,
-      "volumeLots": 138687,
-      "dataDate": "2026-07-31",
-      "peRaw": 17.65,
+      "volumeShares": 1638307.0,
+      "volumeLots": 1638,
+      "dataDate": "2026-08-03",
+      "peRaw": 19.98,
       "pbRaw": null,
       "yieldRaw": null
     },
     {
-      "symbol": "6669",
-      "name": "緯穎",
+      "symbol": "2421",
+      "name": "建準",
       "market": "TW",
-      "sector": "電腦及週邊設備業",
-      "price": 5390.0,
-      "change": 10.0,
-      "score": 49,
+      "sector": "電子零組件業",
+      "price": 136.5,
+      "change": 4.2,
+      "score": 52,
       "signal": "中性",
-      "logo": "緯",
+      "logo": "建",
       "dims": [
         58,
-        64,
-        40,
+        69,
+        43,
         0
       ],
-      "pe": "18.1x",
+      "pe": "16.7x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "78.6%",
+      "vol": "54.2%",
       "thesis": [
-        "出現長下引線",
+        "MACD 柱狀體由綠轉紅",
         "收盤價站上 MA5、MA10、MA20",
         "每日交易量 1000 張以上",
-        "技術條件通過 3/4；資料日期 2026-07-31。"
+        "技術條件通過 3/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 78.6%，近 70 日最大回撤約 -26.1%。",
+      "risk": "近 20 日年化波動約 54.2%，近 70 日最大回撤約 -68.4%。",
       "technical": {
-        "shadow": true,
-        "macd": false,
+        "shadow": false,
+        "macd": true,
         "mas": true,
         "volume": true
       },
       "technicalWindows": {
         "d1": {
-          "shadow": true,
-          "macd": false,
+          "shadow": false,
+          "macd": true,
           "mas": true,
           "volume": true
         },
         "d3": {
-          "shadow": true,
-          "macd": false,
+          "shadow": false,
+          "macd": true,
           "mas": true,
           "volume": true
         },
         "d5": {
           "shadow": false,
-          "macd": false,
+          "macd": true,
           "mas": true,
           "volume": true
         }
       },
-      "volumeShares": 1458695.0,
-      "volumeLots": 1459,
-      "dataDate": "2026-07-31",
-      "peRaw": 18.07,
+      "volumeShares": 2307753.0,
+      "volumeLots": 2308,
+      "dataDate": "2026-08-03",
+      "peRaw": 16.67,
       "pbRaw": null,
       "yieldRaw": null
     },
     {
-      "symbol": "3008",
-      "name": "大立光",
+      "symbol": "2301",
+      "name": "光寶科",
       "market": "TW",
-      "sector": "光電業",
-      "price": 4035.0,
-      "change": 8.61,
-      "score": 43,
+      "sector": "電腦及週邊設備業",
+      "price": 229.5,
+      "change": 9.81,
+      "score": 48,
       "signal": "中性",
-      "logo": "大",
+      "logo": "光",
       "dims": [
-        50,
-        60,
-        29,
+        48,
+        74,
+        26,
         0
       ],
-      "pe": "25.2x",
+      "pe": "26.8x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "73.4%",
+      "vol": "82.7%",
       "thesis": [
-        "出現長下引線",
+        "MACD 柱狀體由綠轉紅",
         "收盤價站上 MA5、MA10、MA20",
         "每日交易量 1000 張以上",
-        "技術條件通過 3/4；資料日期 2026-07-31。"
+        "技術條件通過 3/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 73.4%，近 70 日最大回撤約 -28.5%。",
+      "risk": "近 20 日年化波動約 82.7%，近 70 日最大回撤約 -83.9%。",
       "technical": {
-        "shadow": true,
-        "macd": false,
+        "shadow": false,
+        "macd": true,
         "mas": true,
         "volume": true
       },
       "technicalWindows": {
         "d1": {
-          "shadow": true,
-          "macd": false,
+          "shadow": false,
+          "macd": true,
           "mas": true,
           "volume": true
         },
         "d3": {
           "shadow": false,
-          "macd": false,
+          "macd": true,
           "mas": true,
           "volume": true
         },
         "d5": {
-          "shadow": true,
-          "macd": false,
+          "shadow": false,
+          "macd": true,
           "mas": true,
           "volume": true
         }
       },
-      "volumeShares": 2970845.0,
-      "volumeLots": 2971,
-      "dataDate": "2026-07-31",
-      "peRaw": 25.19,
+      "volumeShares": 23312857.0,
+      "volumeLots": 23313,
+      "dataDate": "2026-08-03",
+      "peRaw": 26.84,
       "pbRaw": null,
       "yieldRaw": null
     },
     {
-      "symbol": "2360",
-      "name": "致茂",
+      "symbol": "2356",
+      "name": "英業達",
       "market": "TW",
-      "sector": "其他電子業",
-      "price": 2100.0,
-      "change": 9.95,
-      "score": 37,
+      "sector": "電腦及週邊設備業",
+      "price": 63.9,
+      "change": 3.4,
+      "score": 48,
       "signal": "中性",
-      "logo": "致",
+      "logo": "英",
+      "dims": [
+        51,
+        70,
+        30,
+        0
+      ],
+      "pe": "24.3x",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "64.5%",
+      "thesis": [
+        "MACD 柱狀體由綠轉紅",
+        "收盤價站上 MA5、MA10、MA20",
+        "每日交易量 1000 張以上",
+        "技術條件通過 3/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 64.5%，近 70 日最大回撤約 -72.2%。",
+      "technical": {
+        "shadow": false,
+        "macd": true,
+        "mas": true,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": false,
+          "macd": true,
+          "mas": true,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": true,
+          "mas": true,
+          "volume": true
+        },
+        "d5": {
+          "shadow": false,
+          "macd": true,
+          "mas": true,
+          "volume": true
+        }
+      },
+      "volumeShares": 33847058.0,
+      "volumeLots": 33847,
+      "dataDate": "2026-08-03",
+      "peRaw": 24.3,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "2455",
+      "name": "全新",
+      "market": "TW",
+      "sector": "通信網路業",
+      "price": 321.0,
+      "change": 9.93,
+      "score": 41,
+      "signal": "中性",
+      "logo": "全",
       "dims": [
         38,
-        61,
+        69,
         12,
         0
       ],
-      "pe": "66.2x",
+      "pe": "78.7x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "86.5%",
+      "vol": "98.3%",
+      "thesis": [
+        "MACD 柱狀體由綠轉紅",
+        "收盤價站上 MA5、MA10、MA20",
+        "每日交易量 1000 張以上",
+        "技術條件通過 3/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 98.3%，近 70 日最大回撤約 -76.6%。",
+      "technical": {
+        "shadow": false,
+        "macd": true,
+        "mas": true,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": false,
+          "macd": true,
+          "mas": true,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": true,
+          "mas": true,
+          "volume": true
+        },
+        "d5": {
+          "shadow": true,
+          "macd": true,
+          "mas": true,
+          "volume": true
+        }
+      },
+      "volumeShares": 6310849.0,
+      "volumeLots": 6311,
+      "dataDate": "2026-08-03",
+      "peRaw": 78.68,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "3443",
+      "name": "創意",
+      "market": "TW",
+      "sector": "半導體業",
+      "price": 4185.0,
+      "change": 9.99,
+      "score": 36,
+      "signal": "中性",
+      "logo": "創",
+      "dims": [
+        38,
+        56,
+        12,
+        0
+      ],
+      "pe": "107.3x",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "100.4%",
       "thesis": [
         "出現長下引線",
         "收盤價站上 MA5、MA10、MA20",
         "每日交易量 1000 張以上",
-        "技術條件通過 3/4；資料日期 2026-07-31。"
+        "技術條件通過 3/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 86.5%，近 70 日最大回撤約 -94.0%。",
+      "risk": "近 20 日年化波動約 100.4%，近 70 日最大回撤約 -95.1%。",
       "technical": {
         "shadow": true,
         "macd": false,
@@ -492,16 +554,137 @@
           "volume": true
         },
         "d5": {
-          "shadow": true,
+          "shadow": false,
           "macd": false,
           "mas": true,
           "volume": true
         }
       },
-      "volumeShares": 6100594.0,
-      "volumeLots": 6101,
-      "dataDate": "2026-07-31",
-      "peRaw": 66.23,
+      "volumeShares": 1306441.0,
+      "volumeLots": 1306,
+      "dataDate": "2026-08-03",
+      "peRaw": 107.28,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "2345",
+      "name": "智邦",
+      "market": "TW",
+      "sector": "通信網路業",
+      "price": 2335.0,
+      "change": 9.88,
+      "score": 36,
+      "signal": "中性",
+      "logo": "智",
+      "dims": [
+        38,
+        57,
+        12,
+        0
+      ],
+      "pe": "44.2x",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "86.2%",
+      "thesis": [
+        "出現長下引線",
+        "收盤價站上 MA5、MA10、MA20",
+        "每日交易量 1000 張以上",
+        "技術條件通過 3/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 86.2%，近 70 日最大回撤約 -96.3%。",
+      "technical": {
+        "shadow": true,
+        "macd": false,
+        "mas": true,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": true,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        },
+        "d5": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        }
+      },
+      "volumeShares": 3727502.0,
+      "volumeLots": 3728,
+      "dataDate": "2026-08-03",
+      "peRaw": 44.16,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "2451",
+      "name": "創見",
+      "market": "TW",
+      "sector": "半導體業",
+      "price": 281.0,
+      "change": -4.1,
+      "score": 49,
+      "signal": "中性",
+      "logo": "創",
+      "dims": [
+        73,
+        45,
+        62,
+        0
+      ],
+      "pe": "4.9x",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "74.3%",
+      "thesis": [
+        "收盤價站上 MA5、MA10、MA20",
+        "每日交易量 1000 張以上",
+        "技術條件通過 2/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 74.3%，近 70 日最大回撤約 -77.5%。",
+      "technical": {
+        "shadow": false,
+        "macd": false,
+        "mas": true,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        },
+        "d5": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        }
+      },
+      "volumeShares": 11558558.0,
+      "volumeLots": 11559,
+      "dataDate": "2026-08-03",
+      "peRaw": 4.89,
       "pbRaw": null,
       "yieldRaw": null
     },
@@ -510,43 +693,43 @@
       "name": "致伸",
       "market": "TW",
       "sector": "電子零組件業",
-      "price": 65.4,
-      "change": 2.83,
-      "score": 50,
+      "price": 64.6,
+      "change": -1.22,
+      "score": 46,
       "signal": "中性",
       "logo": "致",
       "dims": [
         63,
-        37,
+        26,
         50,
         57
       ],
-      "pe": "12.4x",
+      "pe": "12.3x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "23.8%",
+      "vol": "24.1%",
       "thesis": [
-        "MACD 柱狀體由綠轉紅",
+        "出現長下引線",
         "每日交易量 1000 張以上",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
+        "技術條件通過 2/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 23.8%，近 70 日最大回撤約 -21.9%。",
+      "risk": "近 20 日年化波動約 24.1%，近 70 日最大回撤約 -21.9%。",
       "technical": {
-        "shadow": false,
-        "macd": true,
+        "shadow": true,
+        "macd": false,
         "mas": false,
         "volume": true
       },
       "technicalWindows": {
         "d1": {
-          "shadow": false,
-          "macd": true,
+          "shadow": true,
+          "macd": false,
           "mas": false,
           "volume": true
         },
         "d3": {
-          "shadow": true,
+          "shadow": false,
           "macd": true,
           "mas": false,
           "volume": true
@@ -558,10 +741,70 @@
           "volume": true
         }
       },
-      "volumeShares": 5735921.0,
-      "volumeLots": 5736,
-      "dataDate": "2026-07-31",
-      "peRaw": 12.41,
+      "volumeShares": 1861758.0,
+      "volumeLots": 1862,
+      "dataDate": "2026-08-03",
+      "peRaw": 12.26,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "4938",
+      "name": "和碩",
+      "market": "TW",
+      "sector": "電腦及週邊設備業",
+      "price": 86.6,
+      "change": 2.61,
+      "score": 45,
+      "signal": "中性",
+      "logo": "和",
+      "dims": [
+        55,
+        44,
+        37,
+        38
+      ],
+      "pe": "19.9x",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "37.4%",
+      "thesis": [
+        "收盤價站上 MA5、MA10、MA20",
+        "每日交易量 1000 張以上",
+        "技術條件通過 2/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 37.4%，近 70 日最大回撤約 -28.6%。",
+      "technical": {
+        "shadow": false,
+        "macd": false,
+        "mas": true,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": true,
+          "mas": true,
+          "volume": true
+        },
+        "d5": {
+          "shadow": true,
+          "macd": true,
+          "mas": true,
+          "volume": true
+        }
+      },
+      "volumeShares": 12895526.0,
+      "volumeLots": 12896,
+      "dataDate": "2026-08-03",
+      "peRaw": 19.91,
       "pbRaw": null,
       "yieldRaw": null
     },
@@ -570,8 +813,8 @@
       "name": "鴻海",
       "market": "TW",
       "sector": "其他電子業",
-      "price": 250.5,
-      "change": 9.15,
+      "price": 253.0,
+      "change": 1.0,
       "score": 42,
       "signal": "中性",
       "logo": "鴻",
@@ -581,7 +824,7 @@
         41,
         0
       ],
-      "pe": "17.8x",
+      "pe": "18.0x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
@@ -589,7 +832,7 @@
       "thesis": [
         "收盤價站上 MA5、MA10、MA20",
         "每日交易量 1000 張以上",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
+        "技術條件通過 2/4；資料日期 2026-08-03。"
       ],
       "risk": "近 20 日年化波動約 48.7%，近 70 日最大回撤約 -69.7%。",
       "technical": {
@@ -618,40 +861,160 @@
           "volume": true
         }
       },
-      "volumeShares": 99413798.0,
-      "volumeLots": 99414,
-      "dataDate": "2026-07-31",
-      "peRaw": 17.79,
+      "volumeShares": 52666207.0,
+      "volumeLots": 52666,
+      "dataDate": "2026-08-03",
+      "peRaw": 17.97,
       "pbRaw": null,
       "yieldRaw": null
     },
     {
-      "symbol": "2354",
-      "name": "鴻準",
+      "symbol": "3231",
+      "name": "緯創",
       "market": "TW",
-      "sector": "其他電子業",
-      "price": 56.5,
-      "change": 6.4,
-      "score": 39,
+      "sector": "電腦及週邊設備業",
+      "price": 186.0,
+      "change": 5.68,
+      "score": 42,
       "signal": "中性",
-      "logo": "鴻",
+      "logo": "緯",
       "dims": [
-        47,
-        44,
-        26,
-        27
+        57,
+        49,
+        39,
+        0
       ],
-      "pe": "26.8x",
+      "pe": "18.7x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "41.0%",
+      "vol": "71.1%",
       "thesis": [
         "收盤價站上 MA5、MA10、MA20",
         "每日交易量 1000 張以上",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
+        "技術條件通過 2/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 41.0%，近 70 日最大回撤約 -37.6%。",
+      "risk": "近 20 日年化波動約 71.1%，近 70 日最大回撤約 -88.3%。",
+      "technical": {
+        "shadow": false,
+        "macd": false,
+        "mas": true,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        },
+        "d5": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        }
+      },
+      "volumeShares": 162427285.0,
+      "volumeLots": 162427,
+      "dataDate": "2026-08-03",
+      "peRaw": 18.66,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "6669",
+      "name": "緯穎",
+      "market": "TW",
+      "sector": "電腦及週邊設備業",
+      "price": 5925.0,
+      "change": 9.93,
+      "score": 41,
+      "signal": "中性",
+      "logo": "緯",
+      "dims": [
+        56,
+        47,
+        37,
+        0
+      ],
+      "pe": "19.9x",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "85.4%",
+      "thesis": [
+        "收盤價站上 MA5、MA10、MA20",
+        "每日交易量 1000 張以上",
+        "技術條件通過 2/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 85.4%，近 70 日最大回撤約 -26.1%。",
+      "technical": {
+        "shadow": false,
+        "macd": false,
+        "mas": true,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        },
+        "d5": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        }
+      },
+      "volumeShares": 3349246.0,
+      "volumeLots": 3349,
+      "dataDate": "2026-08-03",
+      "peRaw": 19.86,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "3036",
+      "name": "文曄",
+      "market": "TW",
+      "sector": "電子通路業",
+      "price": 204.5,
+      "change": 4.07,
+      "score": 41,
+      "signal": "中性",
+      "logo": "文",
+      "dims": [
+        62,
+        40,
+        46,
+        0
+      ],
+      "pe": "14.5x",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "51.6%",
+      "thesis": [
+        "收盤價站上 MA5、MA10、MA20",
+        "每日交易量 1000 張以上",
+        "技術條件通過 2/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 51.6%，近 70 日最大回撤約 -84.5%。",
       "technical": {
         "shadow": false,
         "macd": false,
@@ -673,15 +1036,75 @@
         },
         "d5": {
           "shadow": true,
-          "macd": true,
+          "macd": false,
           "mas": true,
           "volume": true
         }
       },
-      "volumeShares": 8130855.0,
-      "volumeLots": 8131,
-      "dataDate": "2026-07-31",
-      "peRaw": 26.78,
+      "volumeShares": 9179752.0,
+      "volumeLots": 9180,
+      "dataDate": "2026-08-03",
+      "peRaw": 14.5,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "2474",
+      "name": "可成",
+      "market": "TW",
+      "sector": "其他電子業",
+      "price": 182.5,
+      "change": -0.27,
+      "score": 38,
+      "signal": "中性",
+      "logo": "可",
+      "dims": [
+        58,
+        23,
+        41,
+        37
+      ],
+      "pe": "17.5x",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "25.9%",
+      "thesis": [
+        "出現長下引線",
+        "每日交易量 1000 張以上",
+        "技術條件通過 2/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 25.9%，近 70 日最大回撤約 -45.2%。",
+      "technical": {
+        "shadow": true,
+        "macd": false,
+        "mas": false,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": true,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        },
+        "d5": {
+          "shadow": false,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        }
+      },
+      "volumeShares": 2324730.0,
+      "volumeLots": 2325,
+      "dataDate": "2026-08-03",
+      "peRaw": 17.48,
       "pbRaw": null,
       "yieldRaw": null
     },
@@ -691,7 +1114,7 @@
       "market": "TW",
       "sector": "半導體業",
       "price": 519.0,
-      "change": 5.7,
+      "change": 0.0,
       "score": 38,
       "signal": "中性",
       "logo": "聯",
@@ -705,13 +1128,13 @@
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "63.8%",
+      "vol": "63.7%",
       "thesis": [
         "收盤價站上 MA5、MA10、MA20",
         "每日交易量 1000 張以上",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
+        "技術條件通過 2/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 63.8%，近 70 日最大回撤約 -80.1%。",
+      "risk": "近 20 日年化波動約 63.7%，近 70 日最大回撤約 -80.1%。",
       "technical": {
         "shadow": false,
         "macd": false,
@@ -732,76 +1155,76 @@
           "volume": true
         },
         "d5": {
-          "shadow": true,
+          "shadow": false,
           "macd": false,
           "mas": true,
           "volume": true
         }
       },
-      "volumeShares": 7502701.0,
-      "volumeLots": 7503,
-      "dataDate": "2026-07-31",
+      "volumeShares": 3445337.0,
+      "volumeLots": 3445,
+      "dataDate": "2026-08-03",
       "peRaw": 21.27,
       "pbRaw": null,
       "yieldRaw": null
     },
     {
-      "symbol": "3653",
-      "name": "健策",
+      "symbol": "2439",
+      "name": "美律",
       "market": "TW",
-      "sector": "電子零組件業",
-      "price": 3445.0,
-      "change": 9.89,
+      "sector": "通信網路業",
+      "price": 80.7,
+      "change": 0.62,
       "score": 38,
       "signal": "中性",
-      "logo": "健",
+      "logo": "美",
       "dims": [
-        38,
-        62,
-        12,
-        0
+        60,
+        23,
+        46,
+        28
       ],
-      "pe": "95.3x",
+      "pe": "14.7x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "77.7%",
+      "vol": "23.4%",
       "thesis": [
         "出現長下引線",
-        "收盤價站上 MA5、MA10、MA20",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
+        "每日交易量 1000 張以上",
+        "技術條件通過 2/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 77.7%，近 70 日最大回撤約 -98.7%。",
+      "risk": "近 20 日年化波動約 23.4%，近 70 日最大回撤約 -59.7%。",
       "technical": {
         "shadow": true,
         "macd": false,
-        "mas": true,
-        "volume": false
+        "mas": false,
+        "volume": true
       },
       "technicalWindows": {
         "d1": {
           "shadow": true,
           "macd": false,
-          "mas": true,
-          "volume": false
+          "mas": false,
+          "volume": true
         },
         "d3": {
-          "shadow": true,
+          "shadow": false,
           "macd": false,
-          "mas": true,
+          "mas": false,
           "volume": true
         },
         "d5": {
-          "shadow": true,
+          "shadow": false,
           "macd": false,
-          "mas": true,
+          "mas": false,
           "volume": true
         }
       },
-      "volumeShares": 915510.0,
-      "volumeLots": 916,
-      "dataDate": "2026-07-31",
-      "peRaw": 95.3,
+      "volumeShares": 1485447.0,
+      "volumeLots": 1485,
+      "dataDate": "2026-08-03",
+      "peRaw": 14.73,
       "pbRaw": null,
       "yieldRaw": null
     },
@@ -810,28 +1233,28 @@
       "name": "仁寶",
       "market": "TW",
       "sector": "電腦及週邊設備業",
-      "price": 36.0,
-      "change": 6.67,
+      "price": 36.35,
+      "change": 0.97,
       "score": 37,
       "signal": "中性",
       "logo": "仁",
       "dims": [
-        48,
+        47,
         44,
-        26,
+        25,
         7
       ],
-      "pe": "27.1x",
+      "pe": "27.3x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "46.4%",
+      "vol": "46.5%",
       "thesis": [
         "收盤價站上 MA5、MA10、MA20",
         "每日交易量 1000 張以上",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
+        "技術條件通過 2/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 46.4%，近 70 日最大回撤約 -55.3%。",
+      "risk": "近 20 日年化波動約 46.5%，近 70 日最大回撤約 -55.3%。",
       "technical": {
         "shadow": false,
         "macd": false,
@@ -852,406 +1275,46 @@
           "volume": true
         },
         "d5": {
-          "shadow": false,
+          "shadow": true,
           "macd": false,
           "mas": true,
           "volume": true
         }
       },
-      "volumeShares": 76506343.0,
-      "volumeLots": 76506,
-      "dataDate": "2026-07-31",
-      "peRaw": 27.07,
+      "volumeShares": 44224579.0,
+      "volumeLots": 44225,
+      "dataDate": "2026-08-03",
+      "peRaw": 27.33,
       "pbRaw": null,
       "yieldRaw": null
     },
     {
-      "symbol": "6278",
-      "name": "台表科",
-      "market": "TW",
-      "sector": "光電業",
-      "price": 140.0,
-      "change": 7.28,
-      "score": 33,
-      "signal": "中性",
-      "logo": "台",
-      "dims": [
-        60,
-        20,
-        44,
-        0
-      ],
-      "pe": "16.0x",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "68.6%",
-      "thesis": [
-        "出現長下引線",
-        "每日交易量 1000 張以上",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 68.6%，近 70 日最大回撤約 -85.5%。",
-      "technical": {
-        "shadow": true,
-        "macd": false,
-        "mas": false,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
-          "shadow": true,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d3": {
-          "shadow": true,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d5": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        }
-      },
-      "volumeShares": 5562335.0,
-      "volumeLots": 5562,
-      "dataDate": "2026-07-31",
-      "peRaw": 15.98,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "2330",
-      "name": "台積電",
-      "market": "TW",
-      "sector": "半導體業",
-      "price": 2425.0,
-      "change": 9.98,
-      "score": 31,
-      "signal": "中性",
-      "logo": "台",
-      "dims": [
-        41,
-        42,
-        16,
-        0
-      ],
-      "pe": "32.6x",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "51.1%",
-      "thesis": [
-        "收盤價站上 MA5、MA10、MA20",
-        "每日交易量 1000 張以上",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 51.1%，近 70 日最大回撤約 -91.0%。",
-      "technical": {
-        "shadow": false,
-        "macd": false,
-        "mas": true,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
-          "shadow": false,
-          "macd": false,
-          "mas": true,
-          "volume": true
-        },
-        "d3": {
-          "shadow": false,
-          "macd": false,
-          "mas": true,
-          "volume": true
-        },
-        "d5": {
-          "shadow": false,
-          "macd": false,
-          "mas": true,
-          "volume": true
-        }
-      },
-      "volumeShares": 69478145.0,
-      "volumeLots": 69478,
-      "dataDate": "2026-07-31",
-      "peRaw": 32.6,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "2464",
-      "name": "盟立",
-      "market": "TW",
-      "sector": "其他電子業",
-      "price": 134.5,
-      "change": 9.8,
-      "score": 31,
-      "signal": "中性",
-      "logo": "盟",
-      "dims": [
-        57,
-        20,
-        40,
-        0
-      ],
-      "pe": "—",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "76.2%",
-      "thesis": [
-        "出現長下引線",
-        "每日交易量 1000 張以上",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 76.2%，近 70 日最大回撤約 -78.8%。",
-      "technical": {
-        "shadow": true,
-        "macd": false,
-        "mas": false,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
-          "shadow": true,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d3": {
-          "shadow": true,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d5": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        }
-      },
-      "volumeShares": 3335578.0,
-      "volumeLots": 3336,
-      "dataDate": "2026-07-31",
-      "peRaw": 0.0,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "2476",
-      "name": "鉅祥",
-      "market": "TW",
-      "sector": "電子零組件業",
-      "price": 113.5,
-      "change": 7.58,
-      "score": 27,
-      "signal": "中性",
-      "logo": "鉅",
-      "dims": [
-        47,
-        22,
-        27,
-        0
-      ],
-      "pe": "26.0x",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "64.2%",
-      "thesis": [
-        "出現長下引線",
-        "每日交易量 1000 張以上",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 64.2%，近 70 日最大回撤約 -80.1%。",
-      "technical": {
-        "shadow": true,
-        "macd": false,
-        "mas": false,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
-          "shadow": true,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d3": {
-          "shadow": true,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d5": {
-          "shadow": true,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        }
-      },
-      "volumeShares": 1687661.0,
-      "volumeLots": 1688,
-      "dataDate": "2026-07-31",
-      "peRaw": 25.97,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "6239",
-      "name": "力成",
-      "market": "TW",
-      "sector": "半導體業",
-      "price": 235.5,
-      "change": 9.79,
-      "score": 26,
-      "signal": "中性",
-      "logo": "力",
-      "dims": [
-        47,
-        20,
-        24,
-        0
-      ],
-      "pe": "28.0x",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "84.1%",
-      "thesis": [
-        "出現長下引線",
-        "每日交易量 1000 張以上",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 84.1%，近 70 日最大回撤約 -77.1%。",
-      "technical": {
-        "shadow": true,
-        "macd": false,
-        "mas": false,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
-          "shadow": true,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d3": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d5": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        }
-      },
-      "volumeShares": 22593532.0,
-      "volumeLots": 22594,
-      "dataDate": "2026-07-31",
-      "peRaw": 28.04,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "3042",
-      "name": "晶技",
-      "market": "TW",
-      "sector": "電子零組件業",
-      "price": 149.5,
-      "change": 9.12,
-      "score": 25,
-      "signal": "中性",
-      "logo": "晶",
-      "dims": [
-        46,
-        20,
-        23,
-        0
-      ],
-      "pe": "28.5x",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "88.3%",
-      "thesis": [
-        "出現長下引線",
-        "每日交易量 1000 張以上",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 88.3%，近 70 日最大回撤約 -83.7%。",
-      "technical": {
-        "shadow": true,
-        "macd": false,
-        "mas": false,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
-          "shadow": true,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d3": {
-          "shadow": true,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d5": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        }
-      },
-      "volumeShares": 24032470.0,
-      "volumeLots": 24032,
-      "dataDate": "2026-07-31",
-      "peRaw": 28.53,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "2455",
-      "name": "全新",
+      "symbol": "2498",
+      "name": "宏達電",
       "market": "TW",
       "sector": "通信網路業",
-      "price": 292.0,
-      "change": 9.98,
-      "score": 22,
+      "price": 39.9,
+      "change": -0.13,
+      "score": 35,
       "signal": "中性",
-      "logo": "全",
+      "logo": "宏",
       "dims": [
+        55,
+        24,
         38,
-        21,
-        12,
-        0
+        21
       ],
-      "pe": "71.6x",
+      "pe": "19.3x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "91.9%",
+      "vol": "39.0%",
       "thesis": [
         "出現長下引線",
         "每日交易量 1000 張以上",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
+        "技術條件通過 2/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 91.9%，近 70 日最大回撤約 -76.6%。",
+      "risk": "近 20 日年化波動約 39.0%，近 70 日最大回撤約 -48.2%。",
       "technical": {
         "shadow": true,
         "macd": false,
@@ -1266,52 +1329,172 @@
           "volume": true
         },
         "d3": {
-          "shadow": true,
+          "shadow": false,
           "macd": false,
           "mas": false,
           "volume": true
         },
         "d5": {
-          "shadow": false,
+          "shadow": true,
           "macd": false,
           "mas": false,
           "volume": true
         }
       },
-      "volumeShares": 5555051.0,
-      "volumeLots": 5555,
-      "dataDate": "2026-07-31",
-      "peRaw": 71.57,
+      "volumeShares": 2460685.0,
+      "volumeLots": 2461,
+      "dataDate": "2026-08-03",
+      "peRaw": 19.28,
       "pbRaw": null,
       "yieldRaw": null
     },
     {
-      "symbol": "2409",
-      "name": "友達",
+      "symbol": "2395",
+      "name": "研華",
+      "market": "TW",
+      "sector": "電腦及週邊設備業",
+      "price": 576.0,
+      "change": 2.31,
+      "score": 32,
+      "signal": "中性",
+      "logo": "研",
+      "dims": [
+        38,
+        46,
+        12,
+        0
+      ],
+      "pe": "36.5x",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "60.0%",
+      "thesis": [
+        "收盤價站上 MA5、MA10、MA20",
+        "每日交易量 1000 張以上",
+        "技術條件通過 2/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 60.0%，近 70 日最大回撤約 -60.3%。",
+      "technical": {
+        "shadow": false,
+        "macd": false,
+        "mas": true,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        },
+        "d5": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        }
+      },
+      "volumeShares": 4389562.0,
+      "volumeLots": 4390,
+      "dataDate": "2026-08-03",
+      "peRaw": 36.48,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "3653",
+      "name": "健策",
+      "market": "TW",
+      "sector": "電子零組件業",
+      "price": 3770.0,
+      "change": 9.43,
+      "score": 32,
+      "signal": "中性",
+      "logo": "健",
+      "dims": [
+        38,
+        46,
+        12,
+        0
+      ],
+      "pe": "104.3x",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "83.8%",
+      "thesis": [
+        "收盤價站上 MA5、MA10、MA20",
+        "每日交易量 1000 張以上",
+        "技術條件通過 2/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 83.8%，近 70 日最大回撤約 -98.7%。",
+      "technical": {
+        "shadow": false,
+        "macd": false,
+        "mas": true,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        },
+        "d5": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        }
+      },
+      "volumeShares": 1821608.0,
+      "volumeLots": 1822,
+      "dataDate": "2026-08-03",
+      "peRaw": 104.29,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "3008",
+      "name": "大立光",
       "market": "TW",
       "sector": "光電業",
-      "price": 24.2,
-      "change": 9.01,
-      "score": 21,
+      "price": 3960.0,
+      "change": -1.86,
+      "score": 29,
       "signal": "中性",
-      "logo": "友",
+      "logo": "大",
       "dims": [
-        38,
-        20,
-        12,
+        50,
+        25,
+        29,
         0
       ],
-      "pe": "75.6x",
+      "pe": "24.7x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "73.1%",
+      "vol": "73.5%",
       "thesis": [
         "出現長下引線",
         "每日交易量 1000 張以上",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
+        "技術條件通過 2/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 73.1%，近 70 日最大回撤約 -61.8%。",
+      "risk": "近 20 日年化波動約 73.5%，近 70 日最大回撤約 -28.5%。",
       "technical": {
         "shadow": true,
         "macd": false,
@@ -1332,106 +1515,166 @@
           "volume": true
         },
         "d5": {
-          "shadow": false,
+          "shadow": true,
           "macd": false,
           "mas": false,
           "volume": true
         }
       },
-      "volumeShares": 197017544.0,
-      "volumeLots": 197018,
-      "dataDate": "2026-07-31",
-      "peRaw": 75.62,
+      "volumeShares": 1846958.0,
+      "volumeLots": 1847,
+      "dataDate": "2026-08-03",
+      "peRaw": 24.72,
       "pbRaw": null,
       "yieldRaw": null
     },
     {
-      "symbol": "2368",
-      "name": "金像電",
+      "symbol": "3017",
+      "name": "奇鋐",
+      "market": "TW",
+      "sector": "電腦及週邊設備業",
+      "price": 2550.0,
+      "change": 9.91,
+      "score": 29,
+      "signal": "中性",
+      "logo": "奇",
+      "dims": [
+        38,
+        40,
+        12,
+        0
+      ],
+      "pe": "41.9x",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "87.6%",
+      "thesis": [
+        "收盤價站上 MA5、MA10、MA20",
+        "每日交易量 1000 張以上",
+        "技術條件通過 2/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 87.6%，近 70 日最大回撤約 -98.9%。",
+      "technical": {
+        "shadow": false,
+        "macd": false,
+        "mas": true,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": false,
+          "macd": false,
+          "mas": true,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": true,
+          "mas": true,
+          "volume": true
+        },
+        "d5": {
+          "shadow": false,
+          "macd": true,
+          "mas": true,
+          "volume": true
+        }
+      },
+      "volumeShares": 4533982.0,
+      "volumeLots": 4534,
+      "dataDate": "2026-08-03",
+      "peRaw": 41.9,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "2383",
+      "name": "台光電",
       "market": "TW",
       "sector": "電子零組件業",
-      "price": 793.0,
-      "change": 9.99,
-      "score": 21,
+      "price": 4980.0,
+      "change": 4.95,
+      "score": 27,
       "signal": "中性",
-      "logo": "金",
+      "logo": "台",
       "dims": [
         38,
-        20,
+        36,
         12,
         0
       ],
-      "pe": "35.8x",
+      "pe": "77.9x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "81.2%",
+      "vol": "93.6%",
       "thesis": [
-        "出現長下引線",
+        "收盤價站上 MA5、MA10、MA20",
         "每日交易量 1000 張以上",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
+        "技術條件通過 2/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 81.2%，近 70 日最大回撤約 -99.3%。",
+      "risk": "近 20 日年化波動約 93.6%，近 70 日最大回撤約 -98.4%。",
       "technical": {
-        "shadow": true,
+        "shadow": false,
         "macd": false,
-        "mas": false,
+        "mas": true,
         "volume": true
       },
       "technicalWindows": {
         "d1": {
-          "shadow": true,
+          "shadow": false,
           "macd": false,
-          "mas": false,
+          "mas": true,
           "volume": true
         },
         "d3": {
-          "shadow": true,
+          "shadow": false,
           "macd": false,
-          "mas": false,
+          "mas": true,
           "volume": true
         },
         "d5": {
           "shadow": false,
           "macd": false,
-          "mas": false,
+          "mas": true,
           "volume": true
         }
       },
-      "volumeShares": 2926470.0,
-      "volumeLots": 2926,
-      "dataDate": "2026-07-31",
-      "peRaw": 35.8,
+      "volumeShares": 4183768.0,
+      "volumeLots": 4184,
+      "dataDate": "2026-08-03",
+      "peRaw": 77.87,
       "pbRaw": null,
       "yieldRaw": null
     },
     {
-      "symbol": "2481",
-      "name": "強茂",
+      "symbol": "2449",
+      "name": "京元電子",
       "market": "TW",
       "sector": "半導體業",
-      "price": 117.5,
-      "change": 9.81,
-      "score": 21,
+      "price": 233.5,
+      "change": 4.47,
+      "score": 24,
       "signal": "中性",
-      "logo": "強",
+      "logo": "京",
       "dims": [
-        38,
+        43,
         20,
-        12,
+        18,
         0
       ],
-      "pe": "37.3x",
+      "pe": "31.7x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "100.7%",
+      "vol": "100.6%",
       "thesis": [
         "出現長下引線",
         "每日交易量 1000 張以上",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
+        "技術條件通過 2/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 100.7%，近 70 日最大回撤約 -85.8%。",
+      "risk": "近 20 日年化波動約 100.6%，近 70 日最大回撤約 -91.8%。",
       "technical": {
         "shadow": true,
         "macd": false,
@@ -1458,40 +1701,40 @@
           "volume": true
         }
       },
-      "volumeShares": 21268953.0,
-      "volumeLots": 21269,
-      "dataDate": "2026-07-31",
-      "peRaw": 37.3,
+      "volumeShares": 31654840.0,
+      "volumeLots": 31655,
+      "dataDate": "2026-08-03",
+      "peRaw": 31.68,
       "pbRaw": null,
       "yieldRaw": null
     },
     {
-      "symbol": "2493",
-      "name": "揚博",
+      "symbol": "3711",
+      "name": "日月光投控",
       "market": "TW",
-      "sector": "電子零組件業",
-      "price": 182.0,
-      "change": 9.97,
-      "score": 21,
+      "sector": "半導體業",
+      "price": 610.0,
+      "change": 9.91,
+      "score": 23,
       "signal": "中性",
-      "logo": "揚",
+      "logo": "日",
       "dims": [
         38,
-        20,
+        24,
         12,
         0
       ],
-      "pe": "43.0x",
+      "pe": "56.6x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "106.5%",
+      "vol": "95.7%",
       "thesis": [
         "出現長下引線",
         "每日交易量 1000 張以上",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
+        "技術條件通過 2/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 106.5%，近 70 日最大回撤約 -91.1%。",
+      "risk": "近 20 日年化波動約 95.7%，近 70 日最大回撤約 -31.4%。",
       "technical": {
         "shadow": true,
         "macd": false,
@@ -1512,76 +1755,16 @@
           "volume": true
         },
         "d5": {
-          "shadow": false,
+          "shadow": true,
           "macd": false,
           "mas": false,
           "volume": true
         }
       },
-      "volumeShares": 2545907.0,
-      "volumeLots": 2546,
-      "dataDate": "2026-07-31",
-      "peRaw": 43.03,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "4958",
-      "name": "臻鼎-KY",
-      "market": "TW",
-      "sector": "電子零組件業",
-      "price": 413.5,
-      "change": 9.97,
-      "score": 21,
-      "signal": "中性",
-      "logo": "臻",
-      "dims": [
-        38,
-        20,
-        12,
-        0
-      ],
-      "pe": "58.3x",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "104.7%",
-      "thesis": [
-        "出現長下引線",
-        "每日交易量 1000 張以上",
-        "技術條件通過 2/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 104.7%，近 70 日最大回撤約 -89.4%。",
-      "technical": {
-        "shadow": true,
-        "macd": false,
-        "mas": false,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
-          "shadow": true,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d3": {
-          "shadow": true,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d5": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        }
-      },
-      "volumeShares": 15543203.0,
-      "volumeLots": 15543,
-      "dataDate": "2026-07-31",
-      "peRaw": 58.32,
+      "volumeShares": 16977392.0,
+      "volumeLots": 16977,
+      "dataDate": "2026-08-03",
+      "peRaw": 56.64,
       "pbRaw": null,
       "yieldRaw": null
     },
@@ -1590,9 +1773,9 @@
       "name": "台灣大",
       "market": "TW",
       "sector": "通信網路業",
-      "price": 112.5,
-      "change": -1.32,
-      "score": 33,
+      "price": 112.0,
+      "change": -0.44,
+      "score": 34,
       "signal": "中性",
       "logo": "台",
       "dims": [
@@ -1601,16 +1784,16 @@
         33,
         69
       ],
-      "pe": "22.8x",
+      "pe": "22.7x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "21.4%",
+      "vol": "20.8%",
       "thesis": [
         "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
+        "技術條件通過 1/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 21.4%，近 70 日最大回撤約 -11.2%。",
+      "risk": "近 20 日年化波動約 20.8%，近 70 日最大回撤約 -11.2%。",
       "technical": {
         "shadow": false,
         "macd": false,
@@ -1637,69 +1820,10 @@
           "volume": true
         }
       },
-      "volumeShares": 19880610.0,
-      "volumeLots": 19881,
-      "dataDate": "2026-07-31",
-      "peRaw": 22.82,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "2474",
-      "name": "可成",
-      "market": "TW",
-      "sector": "其他電子業",
-      "price": 183.0,
-      "change": 2.52,
-      "score": 30,
-      "signal": "中性",
-      "logo": "可",
-      "dims": [
-        58,
-        4,
-        41,
-        34
-      ],
-      "pe": "17.5x",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "28.4%",
-      "thesis": [
-        "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 28.4%，近 70 日最大回撤約 -45.2%。",
-      "technical": {
-        "shadow": false,
-        "macd": false,
-        "mas": false,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d3": {
-          "shadow": true,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d5": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        }
-      },
-      "volumeShares": 2934237.0,
-      "volumeLots": 2934,
-      "dataDate": "2026-07-31",
-      "peRaw": 17.53,
+      "volumeShares": 10929038.0,
+      "volumeLots": 10929,
+      "dataDate": "2026-08-03",
+      "peRaw": 22.72,
       "pbRaw": null,
       "yieldRaw": null
     },
@@ -1708,25 +1832,25 @@
       "name": "微星",
       "market": "TW",
       "sector": "電腦及週邊設備業",
-      "price": 142.0,
-      "change": 4.41,
+      "price": 143.0,
+      "change": 0.7,
       "score": 30,
       "signal": "中性",
       "logo": "微",
       "dims": [
         62,
-        7,
+        8,
         46,
         10
       ],
-      "pe": "14.8x",
+      "pe": "14.9x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
       "vol": "46.4%",
       "thesis": [
         "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
+        "技術條件通過 1/4；資料日期 2026-08-03。"
       ],
       "risk": "近 20 日年化波動約 46.4%，近 70 日最大回撤約 -51.7%。",
       "technical": {
@@ -1743,7 +1867,7 @@
           "volume": true
         },
         "d3": {
-          "shadow": true,
+          "shadow": false,
           "macd": false,
           "mas": false,
           "volume": true
@@ -1755,69 +1879,10 @@
           "volume": true
         }
       },
-      "volumeShares": 18799330.0,
-      "volumeLots": 18799,
-      "dataDate": "2026-07-31",
-      "peRaw": 14.84,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "2439",
-      "name": "美律",
-      "market": "TW",
-      "sector": "通信網路業",
-      "price": 80.2,
-      "change": -0.87,
-      "score": 30,
-      "signal": "中性",
-      "logo": "美",
-      "dims": [
-        60,
-        3,
-        46,
-        26
-      ],
-      "pe": "14.6x",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "25.4%",
-      "thesis": [
-        "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 25.4%，近 70 日最大回撤約 -59.7%。",
-      "technical": {
-        "shadow": false,
-        "macd": false,
-        "mas": false,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d3": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d5": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        }
-      },
-      "volumeShares": 2760897.0,
-      "volumeLots": 2761,
-      "dataDate": "2026-07-31",
-      "peRaw": 14.64,
+      "volumeShares": 12129021.0,
+      "volumeLots": 12129,
+      "dataDate": "2026-08-03",
+      "peRaw": 14.94,
       "pbRaw": null,
       "yieldRaw": null
     },
@@ -1826,25 +1891,25 @@
       "name": "中華電",
       "market": "TW",
       "sector": "通信網路業",
-      "price": 139.5,
-      "change": -0.71,
+      "price": 139.0,
+      "change": -0.36,
       "score": 29,
       "signal": "中性",
       "logo": "中",
       "dims": [
-        47,
+        48,
         7,
-        24,
+        25,
         57
       ],
-      "pe": "27.7x",
+      "pe": "27.6x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
       "vol": "19.6%",
       "thesis": [
         "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
+        "技術條件通過 1/4；資料日期 2026-08-03。"
       ],
       "risk": "近 20 日年化波動約 19.6%，近 70 日最大回撤約 -28.3%。",
       "technical": {
@@ -1867,75 +1932,16 @@
           "volume": true
         },
         "d5": {
-          "shadow": true,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        }
-      },
-      "volumeShares": 23664742.0,
-      "volumeLots": 23665,
-      "dataDate": "2026-07-31",
-      "peRaw": 27.73,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "2362",
-      "name": "藍天",
-      "market": "TW",
-      "sector": "電腦及週邊設備業",
-      "price": 41.95,
-      "change": 1.21,
-      "score": 28,
-      "signal": "中性",
-      "logo": "藍",
-      "dims": [
-        54,
-        8,
-        39,
-        17
-      ],
-      "pe": "18.7x",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "44.1%",
-      "thesis": [
-        "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 44.1%，近 70 日最大回撤約 -46.1%。",
-      "technical": {
-        "shadow": false,
-        "macd": false,
-        "mas": false,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d3": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d5": {
           "shadow": false,
           "macd": false,
           "mas": false,
           "volume": true
         }
       },
-      "volumeShares": 1024844.0,
-      "volumeLots": 1025,
-      "dataDate": "2026-07-31",
-      "peRaw": 18.73,
+      "volumeShares": 10520267.0,
+      "volumeLots": 10520,
+      "dataDate": "2026-08-03",
+      "peRaw": 27.63,
       "pbRaw": null,
       "yieldRaw": null
     },
@@ -1944,27 +1950,27 @@
       "name": "技嘉",
       "market": "TW",
       "sector": "電腦及週邊設備業",
-      "price": 336.5,
-      "change": 5.65,
+      "price": 324.5,
+      "change": -3.57,
       "score": 28,
       "signal": "中性",
       "logo": "技",
       "dims": [
-        61,
-        7,
-        44,
+        62,
+        6,
+        45,
         0
       ],
-      "pe": "15.7x",
+      "pe": "15.2x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "42.0%",
+      "vol": "43.8%",
       "thesis": [
         "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
+        "技術條件通過 1/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 42.0%，近 70 日最大回撤約 -86.9%。",
+      "risk": "近 20 日年化波動約 43.8%，近 70 日最大回撤約 -86.9%。",
       "technical": {
         "shadow": false,
         "macd": false,
@@ -1991,10 +1997,10 @@
           "volume": true
         }
       },
-      "volumeShares": 8320257.0,
-      "volumeLots": 8320,
-      "dataDate": "2026-07-31",
-      "peRaw": 15.72,
+      "volumeShares": 10891022.0,
+      "volumeLots": 10891,
+      "dataDate": "2026-08-03",
+      "peRaw": 15.16,
       "pbRaw": null,
       "yieldRaw": null
     },
@@ -2003,8 +2009,8 @@
       "name": "正崴",
       "market": "TW",
       "sector": "電子零組件業",
-      "price": 33.6,
-      "change": 2.28,
+      "price": 34.45,
+      "change": 2.53,
       "score": 28,
       "signal": "中性",
       "logo": "正",
@@ -2012,18 +2018,18 @@
         55,
         3,
         40,
-        26
+        29
       ],
       "pe": "—",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "41.6%",
+      "vol": "38.4%",
       "thesis": [
         "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
+        "技術條件通過 1/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 41.6%，近 70 日最大回撤約 -38.3%。",
+      "risk": "近 20 日年化波動約 38.4%，近 70 日最大回撤約 -38.3%。",
       "technical": {
         "shadow": false,
         "macd": false,
@@ -2044,134 +2050,16 @@
           "volume": true
         },
         "d5": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        }
-      },
-      "volumeShares": 1671232.0,
-      "volumeLots": 1671,
-      "dataDate": "2026-07-31",
-      "peRaw": 0.0,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "3036",
-      "name": "文曄",
-      "market": "TW",
-      "sector": "電子通路業",
-      "price": 196.5,
-      "change": 7.08,
-      "score": 28,
-      "signal": "中性",
-      "logo": "文",
-      "dims": [
-        63,
-        4,
-        47,
-        0
-      ],
-      "pe": "13.9x",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "49.7%",
-      "thesis": [
-        "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 49.7%，近 70 日最大回撤約 -84.5%。",
-      "technical": {
-        "shadow": false,
-        "macd": false,
-        "mas": false,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d3": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d5": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        }
-      },
-      "volumeShares": 10716640.0,
-      "volumeLots": 10717,
-      "dataDate": "2026-07-31",
-      "peRaw": 13.94,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "2498",
-      "name": "宏達電",
-      "market": "TW",
-      "sector": "通信網路業",
-      "price": 39.95,
-      "change": 5.55,
-      "score": 27,
-      "signal": "中性",
-      "logo": "宏",
-      "dims": [
-        55,
-        4,
-        38,
-        19
-      ],
-      "pe": "19.3x",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "40.1%",
-      "thesis": [
-        "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 40.1%，近 70 日最大回撤約 -48.2%。",
-      "technical": {
-        "shadow": false,
-        "macd": false,
-        "mas": false,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d3": {
           "shadow": true,
           "macd": false,
           "mas": false,
           "volume": true
-        },
-        "d5": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
         }
       },
-      "volumeShares": 4924883.0,
-      "volumeLots": 4925,
-      "dataDate": "2026-07-31",
-      "peRaw": 19.3,
+      "volumeShares": 1311235.0,
+      "volumeLots": 1311,
+      "dataDate": "2026-08-03",
+      "peRaw": 0.0,
       "pbRaw": null,
       "yieldRaw": null
     },
@@ -2180,86 +2068,27 @@
       "name": "宏碁",
       "market": "TW",
       "sector": "電腦及週邊設備業",
-      "price": 28.85,
-      "change": 3.41,
+      "price": 28.8,
+      "change": -0.17,
       "score": 26,
       "signal": "中性",
       "logo": "宏",
       "dims": [
         53,
-        4,
-        34,
-        21
-      ],
-      "pe": "21.9x",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "34.5%",
-      "thesis": [
-        "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 34.5%，近 70 日最大回撤約 -53.2%。",
-      "technical": {
-        "shadow": false,
-        "macd": false,
-        "mas": false,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d3": {
-          "shadow": true,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d5": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        }
-      },
-      "volumeShares": 35554873.0,
-      "volumeLots": 35555,
-      "dataDate": "2026-07-31",
-      "peRaw": 21.86,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "2421",
-      "name": "建準",
-      "market": "TW",
-      "sector": "電子零組件業",
-      "price": 131.0,
-      "change": 8.71,
-      "score": 26,
-      "signal": "中性",
-      "logo": "建",
-      "dims": [
-        59,
         3,
-        44,
-        0
+        34,
+        23
       ],
-      "pe": "16.0x",
+      "pe": "21.8x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "51.7%",
+      "vol": "32.4%",
       "thesis": [
         "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
+        "技術條件通過 1/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 51.7%，近 70 日最大回撤約 -68.4%。",
+      "risk": "近 20 日年化波動約 32.4%，近 70 日最大回撤約 -53.2%。",
       "technical": {
         "shadow": false,
         "macd": false,
@@ -2280,75 +2109,16 @@
           "volume": true
         },
         "d5": {
-          "shadow": true,
-          "macd": true,
-          "mas": false,
-          "volume": true
-        }
-      },
-      "volumeShares": 2210333.0,
-      "volumeLots": 2210,
-      "dataDate": "2026-07-31",
-      "peRaw": 16.0,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "5269",
-      "name": "祥碩",
-      "market": "TW",
-      "sector": "半導體業",
-      "price": 1315.0,
-      "change": 0.77,
-      "score": 26,
-      "signal": "中性",
-      "logo": "祥",
-      "dims": [
-        60,
-        2,
-        44,
-        0
-      ],
-      "pe": "16.1x",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "48.9%",
-      "thesis": [
-        "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 48.9%，近 70 日最大回撤約 -77.2%。",
-      "technical": {
-        "shadow": false,
-        "macd": false,
-        "mas": false,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d3": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d5": {
           "shadow": false,
           "macd": false,
           "mas": false,
           "volume": true
         }
       },
-      "volumeShares": 1564349.0,
-      "volumeLots": 1564,
-      "dataDate": "2026-07-31",
-      "peRaw": 16.14,
+      "volumeShares": 18546564.0,
+      "volumeLots": 18547,
+      "dataDate": "2026-08-03",
+      "peRaw": 21.82,
       "pbRaw": null,
       "yieldRaw": null
     },
@@ -2357,8 +2127,8 @@
       "name": "廣達",
       "market": "TW",
       "sector": "電腦及週邊設備業",
-      "price": 291.5,
-      "change": 4.48,
+      "price": 296.5,
+      "change": 1.72,
       "score": 25,
       "signal": "中性",
       "logo": "廣",
@@ -2368,16 +2138,16 @@
         46,
         0
       ],
-      "pe": "14.7x",
+      "pe": "14.9x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "56.9%",
+      "vol": "56.6%",
       "thesis": [
         "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
+        "技術條件通過 1/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 56.9%，近 70 日最大回撤約 -85.4%。",
+      "risk": "近 20 日年化波動約 56.6%，近 70 日最大回撤約 -85.4%。",
       "technical": {
         "shadow": false,
         "macd": false,
@@ -2404,10 +2174,10 @@
           "volume": true
         }
       },
-      "volumeShares": 49270092.0,
-      "volumeLots": 49270,
-      "dataDate": "2026-07-31",
-      "peRaw": 14.66,
+      "volumeShares": 29365626.0,
+      "volumeLots": 29366,
+      "dataDate": "2026-08-03",
+      "peRaw": 14.91,
       "pbRaw": null,
       "yieldRaw": null
     },
@@ -2416,27 +2186,27 @@
       "name": "義隆",
       "market": "TW",
       "sector": "半導體業",
-      "price": 151.0,
-      "change": 2.03,
-      "score": 24,
+      "price": 156.5,
+      "change": 3.64,
+      "score": 25,
       "signal": "中性",
       "logo": "義",
       "dims": [
         59,
-        1,
-        43,
+        2,
+        42,
         0
       ],
-      "pe": "16.6x",
+      "pe": "17.2x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "46.9%",
+      "vol": "49.5%",
       "thesis": [
         "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
+        "技術條件通過 1/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 46.9%，近 70 日最大回撤約 -73.7%。",
+      "risk": "近 20 日年化波動約 49.5%，近 70 日最大回撤約 -73.7%。",
       "technical": {
         "shadow": false,
         "macd": false,
@@ -2463,69 +2233,10 @@
           "volume": true
         }
       },
-      "volumeShares": 4649852.0,
-      "volumeLots": 4650,
-      "dataDate": "2026-07-31",
-      "peRaw": 16.63,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "3044",
-      "name": "健鼎",
-      "market": "TW",
-      "sector": "電子零組件業",
-      "price": 369.0,
-      "change": 7.89,
-      "score": 24,
-      "signal": "中性",
-      "logo": "健",
-      "dims": [
-        58,
-        0,
-        41,
-        0
-      ],
-      "pe": "17.9x",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "61.2%",
-      "thesis": [
-        "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 61.2%，近 70 日最大回撤約 -83.4%。",
-      "technical": {
-        "shadow": false,
-        "macd": false,
-        "mas": false,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d3": {
-          "shadow": true,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d5": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        }
-      },
-      "volumeShares": 3814394.0,
-      "volumeLots": 3814,
-      "dataDate": "2026-07-31",
-      "peRaw": 17.93,
+      "volumeShares": 3041412.0,
+      "volumeLots": 3041,
+      "dataDate": "2026-08-03",
+      "peRaw": 17.24,
       "pbRaw": null,
       "yieldRaw": null
     },
@@ -2534,11 +2245,188 @@
       "name": "聯電",
       "market": "TW",
       "sector": "半導體業",
-      "price": 121.0,
-      "change": 10.0,
-      "score": 23,
+      "price": 118.0,
+      "change": -2.48,
+      "score": 24,
       "signal": "中性",
       "logo": "聯",
+      "dims": [
+        59,
+        0,
+        41,
+        0
+      ],
+      "pe": "17.7x",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "99.8%",
+      "thesis": [
+        "每日交易量 1000 張以上",
+        "技術條件通過 1/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 99.8%，近 70 日最大回撤約 -91.9%。",
+      "technical": {
+        "shadow": false,
+        "macd": false,
+        "mas": false,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": false,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        },
+        "d5": {
+          "shadow": true,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        }
+      },
+      "volumeShares": 372708183.0,
+      "volumeLots": 372708,
+      "dataDate": "2026-08-03",
+      "peRaw": 17.74,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "2464",
+      "name": "盟立",
+      "market": "TW",
+      "sector": "其他電子業",
+      "price": 147.5,
+      "change": 9.67,
+      "score": 24,
+      "signal": "中性",
+      "logo": "盟",
+      "dims": [
+        57,
+        2,
+        40,
+        0
+      ],
+      "pe": "—",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "83.3%",
+      "thesis": [
+        "每日交易量 1000 張以上",
+        "技術條件通過 1/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 83.3%，近 70 日最大回撤約 -78.8%。",
+      "technical": {
+        "shadow": false,
+        "macd": false,
+        "mas": false,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": false,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        },
+        "d5": {
+          "shadow": false,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        }
+      },
+      "volumeShares": 6371176.0,
+      "volumeLots": 6371,
+      "dataDate": "2026-08-03",
+      "peRaw": 0.0,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "6278",
+      "name": "台表科",
+      "market": "TW",
+      "sector": "光電業",
+      "price": 145.5,
+      "change": 3.93,
+      "score": 24,
+      "signal": "中性",
+      "logo": "台",
+      "dims": [
+        59,
+        0,
+        43,
+        0
+      ],
+      "pe": "16.6x",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "71.6%",
+      "thesis": [
+        "每日交易量 1000 張以上",
+        "技術條件通過 1/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 71.6%，近 70 日最大回撤約 -85.5%。",
+      "technical": {
+        "shadow": false,
+        "macd": false,
+        "mas": false,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": false,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        },
+        "d5": {
+          "shadow": true,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        }
+      },
+      "volumeShares": 3570448.0,
+      "volumeLots": 3570,
+      "dataDate": "2026-08-03",
+      "peRaw": 16.61,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "3044",
+      "name": "健鼎",
+      "market": "TW",
+      "sector": "電子零組件業",
+      "price": 374.0,
+      "change": 1.36,
+      "score": 23,
+      "signal": "中性",
+      "logo": "健",
       "dims": [
         58,
         0,
@@ -2549,12 +2437,12 @@
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "101.0%",
+      "vol": "60.2%",
       "thesis": [
         "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
+        "技術條件通過 1/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 101.0%，近 70 日最大回撤約 -91.9%。",
+      "risk": "近 20 日年化波動約 60.2%，近 70 日最大回撤約 -83.4%。",
       "technical": {
         "shadow": false,
         "macd": false,
@@ -2581,10 +2469,69 @@
           "volume": true
         }
       },
-      "volumeShares": 45464057.0,
-      "volumeLots": 45464,
-      "dataDate": "2026-07-31",
-      "peRaw": 18.2,
+      "volumeShares": 3557410.0,
+      "volumeLots": 3557,
+      "dataDate": "2026-08-03",
+      "peRaw": 18.17,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "2404",
+      "name": "漢唐",
+      "market": "TW",
+      "sector": "其他電子業",
+      "price": 1105.0,
+      "change": 0.45,
+      "score": 22,
+      "signal": "中性",
+      "logo": "漢",
+      "dims": [
+        55,
+        1,
+        36,
+        0
+      ],
+      "pe": "20.5x",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "68.7%",
+      "thesis": [
+        "每日交易量 1000 張以上",
+        "技術條件通過 1/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 68.7%，近 70 日最大回撤約 -95.7%。",
+      "technical": {
+        "shadow": false,
+        "macd": false,
+        "mas": false,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": false,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        },
+        "d5": {
+          "shadow": true,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        }
+      },
+      "volumeShares": 2660293.0,
+      "volumeLots": 2660,
+      "dataDate": "2026-08-03",
+      "peRaw": 20.54,
       "pbRaw": null,
       "yieldRaw": null
     },
@@ -2593,86 +2540,27 @@
       "name": "超豐",
       "market": "TW",
       "sector": "半導體業",
-      "price": 100.5,
-      "change": 7.37,
-      "score": 23,
+      "price": 110.5,
+      "change": 9.95,
+      "score": 22,
       "signal": "中性",
       "logo": "超",
       "dims": [
-        57,
+        55,
         0,
-        40,
+        36,
         0
       ],
-      "pe": "18.6x",
+      "pe": "20.5x",
       "growth": "—",
       "roe": "—",
       "margin": "—",
-      "vol": "86.1%",
+      "vol": "94.8%",
       "thesis": [
         "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
+        "技術條件通過 1/4；資料日期 2026-08-03。"
       ],
-      "risk": "近 20 日年化波動約 86.1%，近 70 日最大回撤約 -62.9%。",
-      "technical": {
-        "shadow": false,
-        "macd": false,
-        "mas": false,
-        "volume": true
-      },
-      "technicalWindows": {
-        "d1": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d3": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        },
-        "d5": {
-          "shadow": false,
-          "macd": false,
-          "mas": false,
-          "volume": true
-        }
-      },
-      "volumeShares": 10092629.0,
-      "volumeLots": 10093,
-      "dataDate": "2026-07-31",
-      "peRaw": 18.61,
-      "pbRaw": null,
-      "yieldRaw": null
-    },
-    {
-      "symbol": "2356",
-      "name": "英業達",
-      "market": "TW",
-      "sector": "電腦及週邊設備業",
-      "price": 61.8,
-      "change": 7.48,
-      "score": 22,
-      "signal": "中性",
-      "logo": "英",
-      "dims": [
-        52,
-        4,
-        31,
-        0
-      ],
-      "pe": "23.5x",
-      "growth": "—",
-      "roe": "—",
-      "margin": "—",
-      "vol": "63.2%",
-      "thesis": [
-        "每日交易量 1000 張以上",
-        "技術條件通過 1/4；資料日期 2026-07-31。"
-      ],
-      "risk": "近 20 日年化波動約 63.2%，近 70 日最大回撤約 -72.2%。",
+      "risk": "近 20 日年化波動約 94.8%，近 70 日最大回撤約 -62.9%。",
       "technical": {
         "shadow": false,
         "macd": false,
@@ -2699,10 +2587,128 @@
           "volume": true
         }
       },
-      "volumeShares": 29648411.0,
-      "volumeLots": 29648,
-      "dataDate": "2026-07-31",
-      "peRaw": 23.5,
+      "volumeShares": 6177984.0,
+      "volumeLots": 6178,
+      "dataDate": "2026-08-03",
+      "peRaw": 20.46,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "2379",
+      "name": "瑞昱",
+      "market": "TW",
+      "sector": "半導體業",
+      "price": 704.0,
+      "change": 3.07,
+      "score": 21,
+      "signal": "中性",
+      "logo": "瑞",
+      "dims": [
+        50,
+        4,
+        28,
+        0
+      ],
+      "pe": "25.3x",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "58.9%",
+      "thesis": [
+        "每日交易量 1000 張以上",
+        "技術條件通過 1/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 58.9%，近 70 日最大回撤約 -88.4%。",
+      "technical": {
+        "shadow": false,
+        "macd": false,
+        "mas": false,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": false,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        },
+        "d5": {
+          "shadow": false,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        }
+      },
+      "volumeShares": 5675389.0,
+      "volumeLots": 5675,
+      "dataDate": "2026-08-03",
+      "peRaw": 25.34,
+      "pbRaw": null,
+      "yieldRaw": null
+    },
+    {
+      "symbol": "2337",
+      "name": "旺宏",
+      "market": "TW",
+      "sector": "半導體業",
+      "price": 110.5,
+      "change": 9.95,
+      "score": 19,
+      "signal": "中性",
+      "logo": "旺",
+      "dims": [
+        49,
+        0,
+        27,
+        0
+      ],
+      "pe": "26.2x",
+      "growth": "—",
+      "roe": "—",
+      "margin": "—",
+      "vol": "104.9%",
+      "thesis": [
+        "每日交易量 1000 張以上",
+        "技術條件通過 1/4；資料日期 2026-08-03。"
+      ],
+      "risk": "近 20 日年化波動約 104.9%，近 70 日最大回撤約 -77.4%。",
+      "technical": {
+        "shadow": false,
+        "macd": false,
+        "mas": false,
+        "volume": true
+      },
+      "technicalWindows": {
+        "d1": {
+          "shadow": false,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        },
+        "d3": {
+          "shadow": false,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        },
+        "d5": {
+          "shadow": true,
+          "macd": false,
+          "mas": false,
+          "volume": true
+        }
+      },
+      "volumeShares": 52907144.0,
+      "volumeLots": 52907,
+      "dataDate": "2026-08-03",
+      "peRaw": 26.18,
       "pbRaw": null,
       "yieldRaw": null
     }
