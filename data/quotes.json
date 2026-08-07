@@ -1,51 +1,51 @@
 {
-  "updatedAt": "2026-08-06T11:56:23.078465+00:00",
+  "updatedAt": "2026-08-07T10:41:31.834978+00:00",
   "source": "GitHub Actions delayed market data with provider fallback",
   "quotes": [
     {
       "symbol": "2330",
-      "price": 2365.0,
-      "change": -1.66,
+      "price": 2370.0,
+      "change": 0.21,
       "currency": "TWD",
       "marketState": null,
       "provider": "Yahoo"
     },
     {
       "symbol": "2454",
-      "price": 3920.0,
-      "change": -2.0,
+      "price": 3900.0,
+      "change": -0.51,
       "currency": "TWD",
       "marketState": null,
       "provider": "Yahoo"
     },
     {
       "symbol": "2881",
-      "price": 126.0,
-      "change": -2.7,
+      "price": 127.0,
+      "change": 0.79,
       "currency": "TWD",
       "marketState": null,
       "provider": "Yahoo"
     },
     {
       "symbol": "AAPL",
-      "price": 311.0,
-      "change": 0.52,
+      "price": 312.41,
+      "change": 0.45,
       "currency": "USD",
       "marketState": null,
       "provider": "Yahoo"
     },
     {
       "symbol": "NVDA",
-      "price": 219.22,
-      "change": 3.43,
+      "price": 218.99,
+      "change": -0.1,
       "currency": "USD",
       "marketState": null,
       "provider": "Yahoo"
     },
     {
       "symbol": "MSFT",
-      "price": 487.46,
-      "change": -1.09,
+      "price": 499.86,
+      "change": 2.54,
       "currency": "USD",
       "marketState": null,
       "provider": "Yahoo"
@@ -55,8 +55,8 @@
     "TW": [
       [
         "加權指數",
-        "44,396.70",
-        -0.48,
+        "44,225.91",
+        -0.38,
         "Yahoo"
       ],
       [
@@ -67,34 +67,34 @@
       ],
       [
         "美元／台幣",
-        "32.21",
-        -0.13,
+        "32.25",
+        0.06,
         "Yahoo"
       ]
     ],
     "US": [
       [
         "S&P 500",
-        "7,723.55",
-        -0.17,
+        "7,709.96",
+        -0.18,
         "Yahoo"
       ],
       [
         "NASDAQ",
-        "26,363.44",
-        -0.83,
+        "26,348.35",
+        -0.06,
         "Yahoo"
       ],
       [
         "Dow Jones",
-        "54,349.12",
-        0.49,
+        "53,885.10",
+        -0.85,
         "Yahoo"
       ],
       [
         "VIX",
-        "15.95",
-        0.89,
+        "15.28",
+        0.86,
         "Yahoo"
       ]
     ]
