@@ -1,51 +1,51 @@
 {
-  "updatedAt": "2026-09-18T13:57:34.359022+00:00",
+  "updatedAt": "2026-09-21T16:04:31.979534+00:00",
   "source": "GitHub Actions delayed market data with provider fallback",
   "quotes": [
     {
       "symbol": "2330",
-      "price": 2460.0,
-      "change": 1.44,
+      "price": 2480.0,
+      "change": 0.81,
       "currency": "TWD",
       "marketState": null,
       "provider": "Yahoo"
     },
     {
       "symbol": "2454",
-      "price": 4710.0,
-      "change": 4.67,
+      "price": 5010.0,
+      "change": 8.91,
       "currency": "TWD",
       "marketState": null,
       "provider": "Yahoo"
     },
     {
       "symbol": "2881",
-      "price": 150.5,
-      "change": -0.66,
+      "price": 154.5,
+      "change": -3.44,
       "currency": "TWD",
       "marketState": null,
       "provider": "Yahoo"
     },
     {
       "symbol": "AAPL",
-      "price": 335.03,
-      "change": -0.58,
+      "price": 337.935,
+      "change": 0.54,
       "currency": "USD",
       "marketState": null,
       "provider": "Yahoo"
     },
     {
       "symbol": "NVDA",
-      "price": 219.5,
-      "change": 0.07,
+      "price": 225.095,
+      "change": 1.27,
       "currency": "USD",
       "marketState": null,
       "provider": "Yahoo"
     },
     {
       "symbol": "MSFT",
-      "price": 493.565,
-      "change": -0.84,
+      "price": 494.537,
+      "change": 0.15,
       "currency": "USD",
       "marketState": null,
       "provider": "Yahoo"
@@ -55,52 +55,51 @@
     "TW": [
       [
         "加權指數",
-        "47,180.75",
-        2.9,
-        "Yahoo"
-      ],
-      [
-        "櫃買指數",
-        "269.45",
-        0.65,
+        "47,718.84",
+        1.14,
         "Yahoo"
       ],
       [
         "美元／台幣",
-        "31.81",
-        -0.12,
+        "31.72",
+        -0.13,
         "Yahoo"
       ]
     ],
     "US": [
       [
         "S&P 500",
-        "7,628.35",
-        -0.12,
+        "7,740.77",
+        1.18,
         "Yahoo"
       ],
       [
         "NASDAQ",
-        "26,450.71",
-        0.12,
+        "26,994.27",
+        1.78,
         "Yahoo"
       ],
       [
         "Dow Jones",
-        "51,560.78",
-        -0.42,
+        "51,927.73",
+        0.47,
         "Yahoo"
       ],
       [
         "VIX",
-        "15.23",
-        -14.0,
+        "14.93",
+        0.81,
         "Yahoo"
       ]
     ]
   },
   "errors": [],
   "indexErrors": [
+    {
+      "symbol": "^TWOII",
+      "label": "櫃買指數",
+      "message": "HTTP Error 404: Not Found"
+    },
     {
       "symbol": "TXF=F",
       "label": "台指近月",
